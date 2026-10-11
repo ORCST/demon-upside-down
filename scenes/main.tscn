@@ -1,0 +1,121 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/world/main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/world/block.gd" id="2_block"]
+[ext_resource type="Script" path="res://scripts/world/backdrop.gd" id="3_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="4_player"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/dummy.tscn" id="5_dummy"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/grunt.tscn" id="6_grunt"]
+[ext_resource type="Script" path="res://scripts/world/game_camera.gd" id="7_camera"]
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="8_hud"]
+
+[sub_resource type="Gradient" id="Gradient_sky"]
+colors = PackedColorArray(0.07, 0.04, 0.12, 1, 0.24, 0.12, 0.26, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sky"]
+gradient = SubResource("Gradient_sky")
+width = 16
+height = 64
+fill_from = Vector2(0, 0)
+fill_to = Vector2(0, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Sky" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="Gradient" type="TextureRect" parent="Sky"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = SubResource("GradientTexture2D_sky")
+expand_mode = 1
+
+[node name="Far" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.35, 0.6)
+
+[node name="Backdrop" type="Node2D" parent="Far"]
+script = ExtResource("3_backdrop")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Floor" type="StaticBody2D" parent="World"]
+position = Vector2(0, 300)
+script = ExtResource("2_block")
+size = Vector2(1600, 80)
+
+[node name="WallLeft" type="StaticBody2D" parent="World"]
+position = Vector2(-16, -120)
+script = ExtResource("2_block")
+size = Vector2(32, 420)
+
+[node name="WallRight" type="StaticBody2D" parent="World"]
+position = Vector2(1584, -120)
+script = ExtResource("2_block")
+size = Vector2(32, 420)
+
+[node name="Step" type="StaticBody2D" parent="World"]
+position = Vector2(600, 268)
+script = ExtResource("2_block")
+size = Vector2(64, 32)
+
+[node name="Ledge" type="StaticBody2D" parent="World"]
+position = Vector2(1460, 236)
+script = ExtResource("2_block")
+size = Vector2(124, 64)
+
+[node name="Plat1" type="StaticBody2D" parent="World"]
+position = Vector2(160, 236)
+script = ExtResource("2_block")
+size = Vector2(80, 8)
+one_way = true
+
+[node name="Plat2" type="StaticBody2D" parent="World"]
+position = Vector2(300, 190)
+script = ExtResource("2_block")
+size = Vector2(80, 8)
+one_way = true
+
+[node name="Plat3" type="StaticBody2D" parent="World"]
+position = Vector2(760, 228)
+script = ExtResource("2_block")
+size = Vector2(120, 8)
+one_way = true
+
+[node name="Plat4" type="StaticBody2D" parent="World"]
+position = Vector2(1120, 220)
+script = ExtResource("2_block")
+size = Vector2(96, 8)
+one_way = true
+
+[node name="Plat5" type="StaticBody2D" parent="World"]
+position = Vector2(1280, 172)
+script = ExtResource("2_block")
+size = Vector2(96, 8)
+one_way = true
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Dummy" parent="Enemies" instance=ExtResource("5_dummy")]
+position = Vector2(330, 300)
+
+[node name="Grunt" parent="Enemies" instance=ExtResource("6_grunt")]
+position = Vector2(960, 300)
+
+[node name="Grunt2" parent="Enemies" instance=ExtResource("6_grunt")]
+position = Vector2(1340, 300)
+
+[node name="Player" parent="." instance=ExtResource("4_player")]
+position = Vector2(120, 300)
+
+[node name="Camera" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+limit_left = 0
+limit_top = -200
+limit_right = 1600
+limit_bottom = 380
+script = ExtResource("7_camera")
+target = NodePath("../Player")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("8_hud")

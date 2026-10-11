@@ -1,0 +1,45 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/grunt.gd" id="1_grunt"]
+[ext_resource type="Script" path="res://scripts/visual/puppet.gd" id="2_puppet"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox.gd" id="3_hitbox"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox.gd" id="4_hurtbox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(14, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hurt"]
+size = Vector2(18, 44)
+
+[node name="Grunt" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 4
+collision_mask = 33
+floor_snap_length = 4.0
+script = ExtResource("1_grunt")
+
+[node name="Body" type="CollisionShape2D" parent="."]
+position = Vector2(0, -20)
+shape = SubResource("RectangleShape2D_body")
+
+[node name="Rig" type="Node2D" parent="."]
+script = ExtResource("2_puppet")
+kind = 1
+skin = Color(0.55, 0.7, 0.42, 1)
+shirt = Color(0.42, 0.16, 0.24, 1)
+pants = Color(0.2, 0.12, 0.18, 1)
+hair = Color(0.9, 0.85, 0.75, 1)
+eye = Color(1, 0.25, 0.2, 1)
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("3_hitbox")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("4_hurtbox")
+
+[node name="Shape" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -22)
+shape = SubResource("RectangleShape2D_hurt")

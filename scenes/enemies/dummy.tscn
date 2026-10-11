@@ -1,0 +1,40 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/dummy.gd" id="1_dummy"]
+[ext_resource type="Script" path="res://scripts/visual/puppet.gd" id="2_puppet"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox.gd" id="3_hurtbox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(18, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hurt"]
+size = Vector2(20, 48)
+
+[node name="Dummy" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 4
+collision_mask = 33
+floor_snap_length = 4.0
+script = ExtResource("1_dummy")
+max_health = 999
+immortal = true
+weight = 1.2
+
+[node name="Body" type="CollisionShape2D" parent="."]
+position = Vector2(0, -22)
+shape = SubResource("RectangleShape2D_body")
+
+[node name="Rig" type="Node2D" parent="."]
+script = ExtResource("2_puppet")
+kind = 2
+shirt = Color(0.78, 0.63, 0.4, 1)
+pants = Color(0.45, 0.32, 0.2, 1)
+eye = Color(0.2, 0.12, 0.1, 1)
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("3_hurtbox")
+
+[node name="Shape" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_hurt")

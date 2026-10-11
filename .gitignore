@@ -1,0 +1,9 @@
+# Godot 4
+.godot/
+/android/
+*.tmp
+# 导出产物
+/build/
+
+# 录屏、导出的演示视频等产物
+/outputs/

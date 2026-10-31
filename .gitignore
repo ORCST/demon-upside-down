@@ -7,3 +7,12 @@
 
 # 录屏、导出的演示视频等产物
 /outputs/
+
+# Python 缓存与本机凭据（不纳入仓库）
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

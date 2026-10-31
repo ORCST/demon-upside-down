@@ -1,0 +1,28 @@
+{
+  "status": "reference_extraction_only_waiting_Devin_pose_review",
+  "source_video": "outputs/motion_reference_20261015/clean_side/ual2__Sword_Heavy_Combo.mp4",
+  "source_fps": 24,
+  "proposed_segment_source_range": [
+    12,
+    50
+  ],
+  "segment_frames": 39,
+  "first_frame_source": "art_source/minimax/hc1_ctrl/native/hc1_ctrl_r012.png",
+  "primary_proposed_global_to_segment_indices": {
+    "21": 9,
+    "27": 15
+  },
+  "alternative_first_anchor_global_to_segment_indices": {
+    "23": 11
+  },
+  "deferred_reference_only_global_to_segment_indices": {
+    "24": 12,
+    "26": 14
+  },
+  "notes": [
+    "Pose descriptions must be checked against these real frames before image_gen.",
+    "R021 is upright sword lifting; R023 is closer to over-shoulder. R024 is still behind/high, not a forward downward strike midpoint.",
+    "R024/R026 are reference only, not anchors to draw in the current proposal.",
+    "No second-cut image generation, ControlNet sampling, independent recovery or third cut performed."
+  ]
+}

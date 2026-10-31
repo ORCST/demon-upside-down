@@ -1,0 +1,58 @@
+{
+  "status": "candidate_verified_pending_user_review",
+  "native_frames": 10,
+  "R010_removed_px": 1263,
+  "R010_only_alpha_changed": true,
+  "other_generated_native_pixel_identical": true,
+  "recovery_and_idle_byte_identical": true,
+  "timeline_ticks": 11,
+  "hit_tick": 5,
+  "input_buffer_tick": 4,
+  "cancel_ticks_inclusive": [
+    6,
+    9
+  ],
+  "gifs": [
+    {
+      "file": "hc1_ctrl_preview.gif",
+      "decoded_unique_frames": 7,
+      "duration_ms": 910,
+      "size": [
+        768,
+        768
+      ]
+    },
+    {
+      "file": "hc1_ctrl_with_idle.gif",
+      "decoded_unique_frames": 9,
+      "duration_ms": 1870,
+      "size": [
+        768,
+        768
+      ]
+    },
+    {
+      "file": "hc1_ctrl_preview_closeup.gif",
+      "decoded_unique_frames": 7,
+      "duration_ms": 910,
+      "size": [
+        776,
+        396
+      ]
+    },
+    {
+      "file": "hc1_ctrl_with_idle_closeup.gif",
+      "decoded_unique_frames": 9,
+      "duration_ms": 1870,
+      "size": [
+        776,
+        396
+      ]
+    }
+  ],
+  "second_cut_reference_images": 24,
+  "second_cut_start_green_exact_nearest_neighbor": true,
+  "second_cut_images_generated": false,
+  "game_assets_imported": false,
+  "ComfyUI_closed": true
+}

@@ -1,0 +1,19 @@
+{
+  "prompt_id": "3c40ef81-b65b-4f52-8d0e-f851e5d1b829",
+  "mode": "fl2va_first_last_keypose",
+  "reference_motion": "Sword_Heavy_Combo",
+  "reference_video_fed_to_model": false,
+  "first_pose": "idle_tail",
+  "last_pose": "slash1_end",
+  "seed": 20261015,
+  "fps": 24,
+  "requested_frames": 39,
+  "size": [
+    768,
+    768
+  ],
+  "steps": 8,
+  "elapsed_seconds": 255.75,
+  "saved_frames": 39,
+  "status": "generated_pending_visual_review"
+}

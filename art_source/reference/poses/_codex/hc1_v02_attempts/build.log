@@ -1,0 +1,311 @@
+{
+  "tool": "built-in image_gen",
+  "new_generation_calls": 3,
+  "lifetime_k4_calls": 4,
+  "selected": "k4_a3_raw.png",
+  "head_uniform_scale": 0.7608695652173914,
+  "k4_head_span_idle": 35,
+  "k4_head_span_export": 35,
+  "k4_body_height_px": 53,
+  "body_height_limit": "Head-size normalization is preserved; crouch does not fully reach review target of ~43px. Candidate requires visual re-review.",
+  "k5_offset_px": [
+    15,
+    0
+  ],
+  "k5_offset_baked": false,
+  "v01_and_root_pose_files_unchanged": true,
+  "protected_file_count": 64,
+  "poses": [
+    {
+      "pose": "idle_tail",
+      "display_bbox": [
+        81,
+        122,
+        175,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        121,
+        130
+      ],
+      "muzzle": {
+        "bbox": [
+          117,
+          158,
+          11,
+          10
+        ],
+        "center": [
+          121.4931506849315,
+          162.58904109589042
+        ]
+      },
+      "head_span": 35,
+      "skin_pixels": 1000,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_k1",
+      "display_bbox": [
+        82,
+        99,
+        131,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        121,
+        130
+      ],
+      "muzzle": {
+        "bbox": [
+          119,
+          158,
+          9,
+          9
+        ],
+        "center": [
+          122.48979591836735,
+          162.48979591836735
+        ]
+      },
+      "head_span": null,
+      "skin_pixels": 729,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_k2",
+      "display_bbox": [
+        29,
+        136,
+        134,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        123,
+        133
+      ],
+      "muzzle": {
+        "bbox": [
+          123,
+          163,
+          10,
+          9
+        ],
+        "center": [
+          127.19672131147541,
+          167.19672131147541
+        ]
+      },
+      "head_span": null,
+      "skin_pixels": 909,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_k3",
+      "display_bbox": [
+        44,
+        127,
+        137,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        122,
+        132
+      ],
+      "muzzle": {
+        "bbox": [
+          125,
+          165,
+          12,
+          10
+        ],
+        "center": [
+          130.56578947368422,
+          169.9078947368421
+        ]
+      },
+      "head_span": null,
+      "skin_pixels": 965,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_k4",
+      "display_bbox": [
+        64,
+        155,
+        133,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        120,
+        131
+      ],
+      "muzzle": {
+        "bbox": [
+          90,
+          169,
+          11,
+          9
+        ],
+        "center": [
+          95.41269841269842,
+          173.38095238095238
+        ]
+      },
+      "head_span": 35,
+      "skin_pixels": 852,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_k5",
+      "display_bbox": [
+        43,
+        155,
+        154,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        125,
+        133
+      ],
+      "muzzle": {
+        "bbox": [
+          144,
+          175,
+          10,
+          9
+        ],
+        "center": [
+          148.76470588235293,
+          179.68627450980392
+        ]
+      },
+      "head_span": null,
+      "skin_pixels": 798,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_k6",
+      "display_bbox": [
+        79,
+        152,
+        203,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        122,
+        131
+      ],
+      "muzzle": {
+        "bbox": [
+          121,
+          166,
+          10,
+          9
+        ],
+        "center": [
+          125.76595744680851,
+          170.31914893617022
+        ]
+      },
+      "head_span": null,
+      "skin_pixels": 868,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_c1",
+      "display_bbox": [
+        84,
+        142,
+        195,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        123,
+        134
+      ],
+      "muzzle": {
+        "bbox": [
+          121,
+          157,
+          11,
+          10
+        ],
+        "center": [
+          126.18461538461538,
+          161.83076923076922
+        ]
+      },
+      "head_span": null,
+      "skin_pixels": 921,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    },
+    {
+      "pose": "hc1_c2",
+      "display_bbox": [
+        84,
+        125,
+        177,
+        207
+      ],
+      "front_hoof_brown_core_interval": [
+        123,
+        133
+      ],
+      "muzzle": {
+        "bbox": [
+          119,
+          159,
+          10,
+          10
+        ],
+        "center": [
+          123.34920634920636,
+          163.82539682539684
+        ]
+      },
+      "head_span": null,
+      "skin_pixels": 854,
+      "palette_valid": true,
+      "unchanged_native_art_except_k4": true
+    }
+  ],
+  "gifs": [
+    {
+      "file": "hc1_preview.gif",
+      "duration_ms": 1500,
+      "nominal_units": 18,
+      "entries": 10,
+      "ending_idle_preview_only": 0
+    },
+    {
+      "file": "hc1_preview_closeup.gif",
+      "duration_ms": 1500,
+      "nominal_units": 18,
+      "entries": 10,
+      "ending_idle_preview_only": 0
+    },
+    {
+      "file": "hc1_devin_timing_preview.gif",
+      "duration_ms": 920,
+      "nominal_units": 11,
+      "entries": 7,
+      "ending_idle_preview_only": 0
+    },
+    {
+      "file": "hc1_devin_timing_with_idle.gif",
+      "duration_ms": 1420,
+      "nominal_units": 17,
+      "entries": 8,
+      "ending_idle_preview_only": 6
+    }
+  ]
+}

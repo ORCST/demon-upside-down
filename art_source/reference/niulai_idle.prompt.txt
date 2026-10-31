@@ -1,0 +1,37 @@
+Tool: built-in image_gen
+Reference: attached Niu Lai image
+
+Generation prompt:
+Use case: stylized-concept.
+Asset type: a single finished PIXEL ART game sprite, landscape transparent PNG, 1536x1024.
+Input image 1 is a CHARACTER IDENTITY REFERENCE ONLY: use the yellow calf face and expression, not the refrigerator, sticker rim, photographed material, pose, or horns. User's written specification takes precedence: remove the horns entirely.
+
+Primary request: Niu Lai as a greatsword warrior in a classic 16-bit side-scrolling action game sprite style reminiscent of Castlevania: Symphony of the Night. Preserve the deadpan, slightly worried identity with thick dark furrowed eyebrow, sleepy brown eye, large projecting pale cream muzzle with TWO tiny nostrils, cream chin, small pointed ear with pink inside, lumpy bald head, and NO HORNS.
+STRICT RIGHT-FACING TRUE PROFILE: the body AND head both point to the right, the projecting muzzle points right, ONLY ONE EYE VISIBLE. Not a 3/4 view. No far eye or far eyebrow shown.
+
+Pixel technique: design on a NATIVE 192x128 pixel canvas, then enlarge EXACTLY 8x nearest-neighbor to 1536x1024. EVERY art pixel occupies one perfectly square solid-color 8x8 block aligned with the same global grid from canvas origin. Edges are deliberate staircase clusters. Limited palette of 16 to 20 colors TOTAL, hard color steps, no antialiasing or partial transparency. One native pixel (8 display pixels) dark outline around the whole character AND sword. Two or three flat tones per material, top-left light. No blur, smooth curves, gradients, variable pixel scales, half pixels, dither noise, or 3D render.
+
+Character: warm GOLDEN YELLOW base #E8B830, yellow lighter and darker tones; NOT orange. Soft chubby childlike calf body with round belly and short limbs, not muscular. Upright on two legs, head about one-third total height. Brown hooves and simple stubby hands. Bare yellow chest, plain dark-brown cloth shorts, brown leather belt.
+Pose: ready combat stance with knees slightly bent, feet apart and weight centered. Arms and legs clearly readable. Both stubby hands grasp the same brown greatsword grip in front of the body.
+Weapon: one greatsword almost as long as the character is tall, very wide thick plain blade of steel gray with just one lighter edge line, simple dark crossguard, brown grip. Blade goes diagonally forward and UP toward the upper right at 45 degrees. Bold silhouette with no ornaments, engravings, gems or glow. Keep the blade away from face and legs.
+
+Composition: character ONLY about 64 native art pixels tall (=512 display pixels, half canvas height). The weapon can extend higher. Center the union of calf and sword within the whole 192x128 canvas. Leave at least 16 native art pixels (=128 display pixels) of EMPTY TRANSPARENT margin on ALL four sides. This is a small game sprite floating within ample transparent space, not a large close-up or a full-canvas illustration. Entire calf AND entire sword including tip within frame.
+Background: genuine fully transparent alpha channel, no ground, no shadow, no text, no border, no rim from the sticker, no refrigerator, no additional objects. One character and one sword only.
+
+Refinement prompt:
+Edit the provided PIXEL ART sprite (image 1) with only these corrections, keeping the same sprite identity, rightward pose, one visible eye, hornless head, ears, muzzle, shorts, belt, sword placement and ample transparent canvas:
+1. Change the brown glove-like hands to bare GOLDEN YELLOW stubby calf hands, the SAME yellow skin palette as the arms. No gloves, wrist wraps, bracers or armor. Two clearly separated hands hold the brown sword grip.
+2. Make the torso and limbs soft and childlike: rounded small belly, short chubby upper arms with no defined biceps or muscular shoulders. Body chest and hips in TRUE RIGHT-FACING PROFILE, not three-quarter. Preserve both arms readable by slight vertical separation.
+3. Thicken the one visible dark furrowed eyebrow into a 2-art-pixel dark cluster and give the sleepy eye a slightly worried deadpan look, matching Niu Lai.
+4. Simplify sword blade: uniform medium steel-gray face with only ONE lighter edge line along its upper-left edge. No second bright white border, no gradient or decorative bevels. Keep one dark outline around its silhouette.
+Maintain genuine fully transparent PNG, strict hard square native art pixels, 16-20 flat colors, one consistent 192x128 art-pixel grid enlarged 8x nearest-neighbor to 1536x1024. No antialiasing, blur, shadow, background or text. Character about 64 native pixels tall, whole sword fully visible with >=16 native pixels empty margin every side. Keep the calf golden yellow, never orange. Image 2 is the original character identity reference; do not copy its horns, sticker edge, background or pose.
+
+Requested pixel export:
+Native canvas 192x128; character height normalized to 64 pixels; 17-color palette with #E8B830 golden-yellow skin; binary transparency; dark outline normalized to one native pixel; steel blade normalized to one gray tone and one light edge; final export nearest-neighbor 8x to 1536x1024. Every output block is copied from one native pixel without interpolation.
+
+Validation:
+Opaque colors: 17
+Partial alpha pixels: 0
+8x8 grid mismatches: 0
+Transparent margins in native pixels (left/top/right/bottom): 50/21/51/21
+

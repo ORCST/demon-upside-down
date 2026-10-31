@@ -1,0 +1,11 @@
+Tool: built-in image_gen
+Image1: art_source/reference/poses/niulai_idle_tail_x4.png
+Image2: art_source/reference/pose_refs/heavy_combo/R008.png
+Image3: art_source/reference/poses/_codex/hc1_v02_attempts/k4_a1_raw.png
+
+Create ONE pixel-art animation keyframe K4 for the calf warrior in Image1, using the crouch/recoil pose of the gray mannequin in Image2. Image3 is a first attempt with the correct hidden sword but TOO TALL; correct that pose, do not reproduce its height.
+
+MOST IMPORTANT: an EXTREMELY DEEP BACK-LOADED SQUAT, not a standing lunge. Sit down onto the deeply folded rear leg at screen LEFT. The hips/shorts are only a little above the heels. The knees rise beside the belly. The front leg reaches screen RIGHT with hoof planted; the rear thigh is nearly horizontal and the rear shin folded. Compress the torso between head and hips. Head and chest tucked backward over the rear knee, never forward past the front thigh. Keep looking right. The whole calf's crouched height should be about TWO THIRDS his upright body height, while the HEAD itself stays the EXACT SAME SIZE as the original approved calf. Big reduction must come from bending hips and knees, not shrinking the head.
+Both hands grip behind the back waist at LEFT. The original long sword is COMPLETELY hidden by the calf's torso, pointing into depth away from camera. Only brown grip and small dark guard may show. ZERO visible silver blade; no short dagger silhouette.
+Use the original chubby body proportions, lumpy hornless yellow head, deadpan eye/brow, cream muzzle, pink ear, brown shorts/belt/hooves and short tufted tail. Right-facing true side profile. Native pixel design: same ~20px head size as approved sprite, crouch body about43px high, front hoof on y207 near x126, head tucked back near x98-105. Standard256x256 transparent canvas, enlarged4x. Preserve the original small sprite scale, don't fill the canvas.
+Only the approved17-color pixel palette, hard pixel edges, one-native-pixel dark outline. No text, shadows, floor, effects or motion blur. Image1 is authoritative for face and sword identity; Image2 for knee/hip compression; Image3 only shows which weapon parts should be occluded.

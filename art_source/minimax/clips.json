@@ -1,0 +1,5 @@
+{
+ "idle": {"frames": "idle_v2_frames", "kind": "loop_all", "align": "feet", "step": 2},
+ "run": {"frames": "run_v2_frames", "kind": "loop_cycle", "align": "torso", "step": 2, "start": 12},
+ "slash3": {"frames": ["slash3_a_frames", "slash3_b_frames"], "kind": "action", "align": "none", "step": 2}
+}

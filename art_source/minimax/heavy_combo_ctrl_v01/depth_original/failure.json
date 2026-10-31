@@ -1,0 +1,5 @@
+{
+  "status": "native_process_aborted_no_frames",
+  "reference_issue": "https://github.com/Comfy-Org/ComfyUI/issues/16230",
+  "next_attempt": "New directory with --disable-comfy-compiler; keep DynamicVRAM and all model/input/sampling settings unchanged."
+}

@@ -1,0 +1,91 @@
+{
+  "tool": "built-in image_gen",
+  "two_reference_images_supported": true,
+  "items": [
+    {
+      "key": "k1",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-8fccd9ad-46f1-413e-b29d-00172e524544.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/k1_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/k1_a1.prompt.txt",
+      "selected": true,
+      "reference_frame": 3
+    },
+    {
+      "key": "k2",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-5b3defb0-dec5-4549-a7c4-2a991ce1e5ea.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/k2_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/k2_a1.prompt.txt",
+      "selected": true,
+      "reference_frame": 5
+    },
+    {
+      "key": "k3",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-1a971611-f7b3-4ea6-a838-221ac24e01a3.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/k3_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/k3_a1.prompt.txt",
+      "selected": true,
+      "reference_frame": 6
+    },
+    {
+      "key": "k4",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-529e5354-ca4e-4f5f-872a-3c47f8748c07.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/k4_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/k4_a1.prompt.txt",
+      "selected": true,
+      "reference_frame": 8
+    },
+    {
+      "key": "k5",
+      "attempt": 2,
+      "generated_path": "C:/Users/Administrator/.codex/generated_images/01a13f04-7428-7ba2-a537-9980eae2b455/exec-e5cd65e1-54ff-4432-83c2-fa302923ed98.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/k5_a2_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/k5_a2.prompt.txt",
+      "selected": true,
+      "reference_frame": 10
+    },
+    {
+      "key": "k6",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-cf094d13-90de-4885-8d1d-c3d84e35aa9a.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/k6_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/k6_a1.prompt.txt",
+      "selected": true,
+      "reference_frame": 12
+    },
+    {
+      "key": "c1",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-e7a50c00-e295-4abb-a820-42bcb6f1793c.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/c1_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/c1_a1.prompt.txt",
+      "selected": true,
+      "reference_frame": null
+    },
+    {
+      "key": "c2",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-5a199bee-3c49-4346-aa86-26f1f5c35c1d.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/c2_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/c2_a1.prompt.txt",
+      "selected": true,
+      "reference_frame": null
+    }
+  ],
+  "discarded": [
+    {
+      "key": "k5",
+      "attempt": 1,
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-2cab42a8-984a-4ac0-b81e-719205b8d598.png",
+      "raw_path": "art_source/reference/poses/_codex/hc1_attempts/k5_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_attempts/k5_a1.prompt.txt",
+      "selected": false,
+      "reference_frame": 10,
+      "rejection_reason": "Rear hoof planted rather than raised like R010."
+    }
+  ],
+  "total_generation_calls": 9
+}

@@ -1,0 +1,285 @@
+{
+  "palette_colors": 32,
+  "assets": [
+    {
+      "file": "sky_far.png",
+      "size": [
+        640,
+        360
+      ],
+      "visible_pixels": 230400,
+      "transparent_pixels": 0,
+      "colors": 26,
+      "seams": {
+        "x_opposite_boundary_exact": true
+      },
+      "sha256": "8274f3408e9198796d8618460972019a60942eca32bfeed0aa951dc66bc29b16"
+    },
+    {
+      "file": "wall_plain.png",
+      "size": [
+        128,
+        384
+      ],
+      "visible_pixels": 49152,
+      "transparent_pixels": 0,
+      "colors": 10,
+      "seams": {
+        "x_opposite_boundary_exact": true
+      },
+      "sha256": "2b49228bd8e14209a04aaa06cc4fe83bcbbe0e6f84ec001e2d4f83bb9559f6c1"
+    },
+    {
+      "file": "wall_window.png",
+      "size": [
+        128,
+        384
+      ],
+      "visible_pixels": 41264,
+      "transparent_pixels": 7888,
+      "colors": 21,
+      "seams": {},
+      "sha256": "a4dd9e126f12f2c99dc795cdef035b5bc1c38bbee0dc9a566f43cec903508e5d"
+    },
+    {
+      "file": "wall_window_small.png",
+      "size": [
+        128,
+        384
+      ],
+      "visible_pixels": 45635,
+      "transparent_pixels": 3517,
+      "colors": 22,
+      "seams": {},
+      "sha256": "575e9e06029e737abfff5ccd577e97778051296449bacd344bba940bf863069d"
+    },
+    {
+      "file": "column.png",
+      "size": [
+        48,
+        384
+      ],
+      "visible_pixels": 12764,
+      "transparent_pixels": 5668,
+      "colors": 18,
+      "seams": {},
+      "sha256": "c2eb6882743be19899a58430365d255839b28f396847dc95ea3e34e03751e2f4"
+    },
+    {
+      "file": "banner.png",
+      "size": [
+        48,
+        112
+      ],
+      "visible_pixels": 3597,
+      "transparent_pixels": 1779,
+      "colors": 17,
+      "seams": {},
+      "sha256": "e85cdb6905a6c2af9a0eef0a4c631f3dff25ec4a06f672e56c94e1d72a447e57"
+    },
+    {
+      "file": "chain.png",
+      "size": [
+        12,
+        64
+      ],
+      "visible_pixels": 564,
+      "transparent_pixels": 204,
+      "colors": 14,
+      "seams": {
+        "y_opposite_boundary_exact": true
+      },
+      "sha256": "13e5e792c2b0e7579f1c1ada64db08a8a9498bdd172ea0b23962dca6a73e16f1"
+    },
+    {
+      "file": "lantern.png",
+      "size": [
+        40,
+        72
+      ],
+      "visible_pixels": 1921,
+      "transparent_pixels": 959,
+      "colors": 19,
+      "seams": {},
+      "sha256": "79e82d37caf70fbb15fa6320aa762557ca4bc7afe467cde69152d225069be27e"
+    },
+    {
+      "file": "torch.png",
+      "size": [
+        96,
+        48
+      ],
+      "visible_pixels": 2124,
+      "transparent_pixels": 2484,
+      "colors": 21,
+      "seams": {},
+      "sha256": "5ca142e1a7cd5b7671eb24edae67309ec490b721e754296baead3463a122a9ea"
+    },
+    {
+      "file": "floor_top.png",
+      "size": [
+        64,
+        16
+      ],
+      "visible_pixels": 1024,
+      "transparent_pixels": 0,
+      "colors": 16,
+      "seams": {
+        "x_opposite_boundary_exact": true
+      },
+      "sha256": "ff445cee42d44f63aaf4d477661f066251eb9feb74ebc8aea9e22314b158f72d"
+    },
+    {
+      "file": "floor_body.png",
+      "size": [
+        64,
+        64
+      ],
+      "visible_pixels": 4096,
+      "transparent_pixels": 0,
+      "colors": 13,
+      "seams": {
+        "x_opposite_boundary_exact": true,
+        "y_opposite_boundary_exact": true
+      },
+      "sha256": "43e4001c4e904ee86d37b910b247f9beb0a8050ec40879a5c4ed248cbeae301e"
+    },
+    {
+      "file": "floor_edge_left.png",
+      "size": [
+        16,
+        80
+      ],
+      "visible_pixels": 1278,
+      "transparent_pixels": 2,
+      "colors": 15,
+      "seams": {},
+      "sha256": "88bf682fb682b50957dbf414fa7dc84b1874b13cffef4d0630507e1e088da762"
+    },
+    {
+      "file": "floor_edge_right.png",
+      "size": [
+        16,
+        80
+      ],
+      "visible_pixels": 1278,
+      "transparent_pixels": 2,
+      "colors": 17,
+      "seams": {},
+      "sha256": "50b793ef2c1b52460405f5d9732fef674a2632b8d179769087842ac3a512f2fc"
+    },
+    {
+      "file": "plank.png",
+      "size": [
+        40,
+        14
+      ],
+      "visible_pixels": 415,
+      "transparent_pixels": 145,
+      "colors": 18,
+      "seams": {},
+      "sha256": "6e0498a23176fc1c77e135de927204596cd4bef858d377280f004e913ec720b7"
+    },
+    {
+      "file": "fg_fence.png",
+      "size": [
+        160,
+        160
+      ],
+      "visible_pixels": 12302,
+      "transparent_pixels": 13298,
+      "colors": 2,
+      "seams": {},
+      "sha256": "fdffc325d5f65b0791205db9e2fc8c0a1ded1585a0e17615a2f51da658fa7813"
+    },
+    {
+      "file": "fg_pillar.png",
+      "size": [
+        64,
+        360
+      ],
+      "visible_pixels": 15937,
+      "transparent_pixels": 7103,
+      "colors": 3,
+      "seams": {},
+      "sha256": "0ca80f931c94c2840f2e2948e4864ba48a52630cb7dc6d554e89e532885a48e4"
+    }
+  ],
+  "generation_calls": 14,
+  "selected_sources": {
+    "sky": "art_source\\environment\\castle_c_v01\\raw\\sky_attempt01.png",
+    "wall_tile": "art_source\\environment\\castle_c_v01\\raw\\wall_tile_attempt01.png",
+    "window_frame": "art_source\\environment\\castle_c_v01\\raw\\window_frame_attempt01.png",
+    "column": "art_source\\environment\\castle_c_v01\\raw\\column_attempt01.png",
+    "banner": "art_source\\environment\\castle_c_v01\\raw\\banner_attempt01.png",
+    "torch4": "art_source\\environment\\castle_c_v01\\raw\\torch4_attempt01.png",
+    "chain": "art_source\\environment\\castle_c_v01\\raw\\chain_attempt01.png",
+    "lantern": "art_source\\environment\\castle_c_v01\\raw\\lantern_attempt01.png",
+    "floor_top": "art_source\\environment\\castle_c_v01\\raw\\floor_top_attempt02.png",
+    "floor_body": "art_source\\environment\\castle_c_v01\\raw\\floor_body_attempt02.png",
+    "plank": "art_source\\environment\\castle_c_v01\\raw\\plank_attempt01.png",
+    "fg_fence": "art_source\\environment\\castle_c_v01\\raw\\fg_fence_attempt01.png"
+  },
+  "builder_sha256": "3e2a1c7fd602f9992ab957d4b1e70124475797d4dae460715ff91fc3d7e6f8e8",
+  "torch": {
+    "frames": 4,
+    "fps": 7.142857142857143,
+    "frame_size": [
+      24,
+      48
+    ],
+    "fixed_bracket_rect": [
+      0,
+      24,
+      24,
+      48
+    ],
+    "brackets_identical": true,
+    "unique_flames": 4
+  },
+  "plank_regions": {
+    "left": [
+      0,
+      0,
+      12,
+      14
+    ],
+    "middle": [
+      12,
+      0,
+      16,
+      14
+    ],
+    "right": [
+      28,
+      0,
+      12,
+      14
+    ]
+  },
+  "wall_origin_in_preview": [
+    0,
+    -84
+  ],
+  "sky_offset_in_preview": [
+    -180,
+    0
+  ],
+  "hero_canvas_offset": [
+    48,
+    92
+  ],
+  "hero_source": "art_source/reference/poses/niulai_idle_tail_native.png",
+  "assembly_native": [
+    640,
+    360
+  ],
+  "assembly_preview": [
+    1280,
+    720
+  ],
+  "nearest_neighbor2x_exact": true,
+  "protected_files_unchanged": 2012,
+  "review_status": "candidate_for_user_review_not_integrated",
+  "note": "Periodic edge bands are repaired before palette mapping. Inspect triple-repeat QA for visible repetition, not only equality."
+}

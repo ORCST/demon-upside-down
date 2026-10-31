@@ -1,0 +1,145 @@
+{
+  "checked_at_utc": "2026-10-16T02:54:43.477203+00:00",
+  "checks": {
+    "control_pngs": 288,
+    "all_dimensions_correct": true,
+    "finite_geometry_inside_canvas": true,
+    "both_variants_grounded": true,
+    "depth_matches_global_z_buffer": true,
+    "binary_masks_and_lineart": true,
+    "sword_has_visible_pixels_every_frame": true,
+    "all_7_videos_decode_24_frames_at_24fps": true,
+    "green_inputs_exact_nearest_neighbor": true
+  },
+  "videos": [
+    {
+      "path": "original/beauty.mp4",
+      "decoded_frames": 24,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.0,
+      "sha256": "1d3491f7cb9a3db5da1356bdaaac485f3ab11c651860668d4fd635c6fd0264d3"
+    },
+    {
+      "path": "original/depth.mp4",
+      "decoded_frames": 24,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.0,
+      "sha256": "483e9849c1439931c1a7857bbaa04576cd2dc88654f1fd0b370e8f07dca1e979"
+    },
+    {
+      "path": "original/lineart.mp4",
+      "decoded_frames": 24,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.0,
+      "sha256": "0b437c68d8c5985d16c46356a2273de0980df3df76386093646c77f4a401a1d7"
+    },
+    {
+      "path": "proxy/beauty.mp4",
+      "decoded_frames": 24,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.0,
+      "sha256": "caf8c064543d3e9f91295cee45ddc2b5f2d2a99f5afc28a75abb2a71c5f09ab9"
+    },
+    {
+      "path": "proxy/depth.mp4",
+      "decoded_frames": 24,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.0,
+      "sha256": "7c1a2550b61ecbd53b9479ae4511f6e942242f7015ebeeca45eb1cdf12fad421"
+    },
+    {
+      "path": "proxy/lineart.mp4",
+      "decoded_frames": 24,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.0,
+      "sha256": "95ec8f2e68373ed33a9f3413f4022a20216c9c68ab0d0a7e6e6466714e86fcd8"
+    },
+    {
+      "path": "control_compare.mp4",
+      "decoded_frames": 24,
+      "fps": 24.0,
+      "size": [
+        1152,
+        640
+      ],
+      "duration_seconds": 1.0,
+      "sha256": "b3a1853128604c75ce5e7b4fc5c944e5917a40c3fcbcbebfbc3eb88429caaa75"
+    }
+  ],
+  "variants": {
+    "original": {
+      "frames": 24,
+      "pngs": 144,
+      "frame0_body_height_px": 192,
+      "feet_last_row_range": [
+        623,
+        623
+      ],
+      "minimum_geometry_margin_px": 133.575,
+      "ground_translation_range_px": [
+        -13.004777743645588,
+        0.797203629478878
+      ],
+      "sword_visible_pixel_range": [
+        236,
+        6294
+      ]
+    },
+    "proxy": {
+      "frames": 24,
+      "pngs": 144,
+      "frame0_body_height_px": 192,
+      "feet_last_row_range": [
+        623,
+        623
+      ],
+      "minimum_geometry_margin_px": 126.244,
+      "ground_translation_range_px": [
+        -10.953831957119696,
+        0.6980869397820274
+      ],
+      "sword_visible_pixel_range": [
+        126,
+        6270
+      ]
+    }
+  },
+  "warnings": [
+    "Initial grip positions and sword angle differ from the approved idle sprite; inspect frame0_alignment.png before sampling.",
+    "Proxy is a modified humanoid, not an exact NiuLai model; appearance fidelity is untested.",
+    "R018-R023 contain the beginning of the next action, not a new independent recovery.",
+    "Masters are exactly R000-R023. The installed H3 node snaps length up to 17k+5 (24 -> 39). Resolve trimming/padding explicitly before generation; no duplicated frames or retiming are baked into these controls.",
+    "No AI generation, ComfyUI upgrade, model download or in-game validation performed."
+  ],
+  "provenance": {
+    "tools/export_control_heavy_combo.py": "e8e4e60d917f66dd466a8bfeb9f2e54a69bb4e9c20947d3737b9965db0371727",
+    "tools/render_control_heavy_combo.py": "8460994fe4a92b5f7417720e32d3a45cbfe1336a11991da0577849422aa08647",
+    "tools/prepare_control_heavy_inputs.py": "d7280d31028bcb739424a57e7c3fbf05eb0ed94807ed3c5236d91f053f6a6ac5",
+    "outputs/motion_reference_20261015/ual2_review.blend": "748d56d5dd095a3c290ccdfd1a115051114a2e7d15110240677d22a8d3048b0a"
+  },
+  "status": "technical_checks_passed_pending_alignment_review"
+}

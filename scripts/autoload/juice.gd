@@ -82,6 +82,7 @@ func spawn(node: Node2D, pos: Vector2) -> void:
 		return
 	scene.add_child(node)
 	node.global_position = pos
+	node.reset_physics_interpolation()
 
 
 func spark(pos: Vector2, dir: Vector2, heavy := false) -> void:

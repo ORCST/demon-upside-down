@@ -1,0 +1,19 @@
+{
+  "file": "art_source/environment/castle_c_scene_concept_v02/castle_c_doorway_props_v01.png",
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "sha256": "b464a2d545677bc7d31c66876056bfd26a3acbc13343423818e5b8256242cf9b",
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "original": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-2b5855fa-961c-4618-9c76-140a91e37c52.png",
+  "references": [
+    "art_source/environment/castle_style_studies_20261029/castle_C_cartoon_v02.png",
+    "art_source/reference/poses/niulai_hd_idle.png"
+  ],
+  "status": "earlier_castle_candidate_retained_current_focus_is_forest",
+  "technical_limit": "Generated concept image; not a verified640x360 native grid,32-color production layer or real game screenshot."
+}

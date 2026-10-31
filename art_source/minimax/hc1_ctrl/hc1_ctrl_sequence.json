@@ -1,0 +1,179 @@
+{
+  "name": "hc1_ctrl",
+  "status": "candidate_pending_user_review",
+  "fps": 12,
+  "canvas": [
+    256,
+    256
+  ],
+  "ground_y": 208,
+  "attack": [
+    {
+      "pose": "hc1_ctrl_r004",
+      "hold": 1
+    },
+    {
+      "pose": "hc1_ctrl_r006",
+      "hold": 1
+    },
+    {
+      "pose": "hc1_ctrl_r008",
+      "hold": 2
+    },
+    {
+      "pose": "hc1_ctrl_r010",
+      "hold": 1
+    },
+    {
+      "pose": "hc1_ctrl_r012",
+      "hold": 3
+    }
+  ],
+  "recover": [
+    {
+      "pose": "hc1_c1",
+      "hold": 2
+    },
+    {
+      "pose": "hc1_c2",
+      "hold": 1
+    }
+  ],
+  "pose_paths": {
+    "hc1_ctrl_r004": "native/hc1_ctrl_r004.png",
+    "hc1_ctrl_r006": "native/hc1_ctrl_r006.png",
+    "hc1_ctrl_r008": "native/hc1_ctrl_r008.png",
+    "hc1_ctrl_r010": "native/hc1_ctrl_r010.png",
+    "hc1_ctrl_r012": "native/hc1_ctrl_r012.png",
+    "hc1_ctrl_r014": "native/hc1_ctrl_r014.png",
+    "hc1_ctrl_r016": "native/hc1_ctrl_r016.png",
+    "hc1_c1": "native/niulai_hc1_c1_native.png",
+    "hc1_c2": "native/niulai_hc1_c2_native.png",
+    "idle_tail": "native/niulai_idle_tail_native.png"
+  },
+  "offset_px": {
+    "hc1_ctrl_r004": [
+      0,
+      0
+    ],
+    "hc1_ctrl_r006": [
+      0,
+      0
+    ],
+    "hc1_ctrl_r008": [
+      0,
+      0
+    ],
+    "hc1_ctrl_r010": [
+      0,
+      0
+    ],
+    "hc1_ctrl_r012": [
+      0,
+      0
+    ],
+    "hc1_ctrl_r014": [
+      0,
+      -1
+    ],
+    "hc1_ctrl_r016": [
+      0,
+      -1
+    ],
+    "hc1_c1": [
+      0,
+      0
+    ],
+    "hc1_c2": [
+      0,
+      0
+    ],
+    "idle_tail": [
+      0,
+      0
+    ]
+  },
+  "spare_poses": [
+    "hc1_ctrl_r014",
+    "hc1_ctrl_r016"
+  ],
+  "hit_after": "hc1_ctrl_r010",
+  "hit_unit_index": 5,
+  "reference_hit_frame": 11,
+  "input_buffer_from": "hc1_ctrl_r010",
+  "input_buffer_tick": 4,
+  "cancel_from": {
+    "pose": "hc1_ctrl_r012",
+    "hold_index": 1
+  },
+  "cancel_until": {
+    "pose": "hc1_c1",
+    "hold_index": 1
+  },
+  "cancel_tick_range_inclusive": [
+    6,
+    9
+  ],
+  "return_to_idle": "idle_tail",
+  "index_base": 0,
+  "playback_ticks": 11,
+  "duration_seconds": 0.9166666666666666,
+  "root_motion_px_estimate": null,
+  "offset_note": "Apply listed offsets ONCE; they are artwork registration, not gameplay root motion. R014/R016 are spare PNGs unchanged at native y208, use offset [0,-1] if selected. Timed playback uses R004/R006/R008/R010/R012, all naturally grounded at y207.",
+  "handoff_mode": "Native frames for Devin to pack after user approval; no clips.json registration or prep_sprites game import in this delivery.",
+  "origins": {
+    "hc1_ctrl_r004": {
+      "source_reference_frame": 4,
+      "source_native": "art_source/minimax/heavy_combo_ctrl_v01/depth_proxy/native_review/R004.png",
+      "source_native_sha256": "96876a4e2311775b6eaf85a50cc2107bd7bf1679c1fc7a84a52a8275f7ffab0f",
+      "source_raw_sha256": "31c42bdb751c57d90fd49e032b9628aba21122efd00c315c8c23887f15bd374a"
+    },
+    "hc1_ctrl_r006": {
+      "source_reference_frame": 6,
+      "source_native": "art_source/minimax/heavy_combo_ctrl_v01/depth_proxy/native_review/R006.png",
+      "source_native_sha256": "df3dc77f8c323f84b3f9c2fafca432b3e79062c3889f4d968bd279e26949f396",
+      "source_raw_sha256": "41e4d39d00196e49f08949039557847078a149cc747ed6847af3ac6d2d6e641d"
+    },
+    "hc1_ctrl_r008": {
+      "source_reference_frame": 8,
+      "source_native": "art_source/minimax/heavy_combo_ctrl_v01/depth_proxy/native_review/R008.png",
+      "source_native_sha256": "a43fb46cd454b481d4746c23e9ee18abd58df55db41bff44732c67446cbd1357",
+      "source_raw_sha256": "d871fcbf2a888fec1ead691fee7bc99c649779a74d584a604a03a9de52c704af"
+    },
+    "hc1_ctrl_r010": {
+      "source_reference_frame": 10,
+      "source_native": "art_source/minimax/heavy_combo_ctrl_v01/depth_proxy/native_review/R010.png",
+      "source_native_sha256": "613c76331f35d67b215a2e7b4a43029e7c0fbfb72617d66063ce9b0e2f6e0490",
+      "source_raw_sha256": "98a269c410b83be176252a47ecb7bf9275d256506510858547a4caf25ddda4a8"
+    },
+    "hc1_ctrl_r012": {
+      "source_reference_frame": 12,
+      "source_native": "art_source/minimax/heavy_combo_ctrl_v01/depth_proxy/native_review/R012.png",
+      "source_native_sha256": "0ad9d5e1553589af6302343d4c49a8cfd72bc33e222b3f81fc9995027cc388dd",
+      "source_raw_sha256": "3801ee70a4a5f614b4a22aa0953e7ac7ce5c0a48c72f3aa82fc5579e5c2079e0"
+    },
+    "hc1_ctrl_r014": {
+      "source_reference_frame": 14,
+      "source_native": "art_source/minimax/heavy_combo_ctrl_v01/depth_proxy/native_review/R014.png",
+      "source_native_sha256": "96812c7bcdf450818c95483d2e779bb313b5ff065e1ed0a30f1b312d3848709b",
+      "source_raw_sha256": "694f17f72bc0305f89b605f22b1017b2533a2354fe1321f8075e90ec73c01cdc"
+    },
+    "hc1_ctrl_r016": {
+      "source_reference_frame": 16,
+      "source_native": "art_source/minimax/heavy_combo_ctrl_v01/depth_proxy/native_review/R016.png",
+      "source_native_sha256": "a267ccc9c608d36d026951f8ce5da31ef5b26ea08259cb025a0d20ef5d65b918",
+      "source_raw_sha256": "e043c46fa7999a750af210cc1df2fd295c24dc98f8b7eeadebe719591e9d52dd"
+    },
+    "hc1_c1": {
+      "source": "art_source/reference/poses/heavy_combo_v02/niulai_hc1_c1_native.png",
+      "source_sha256": "77c3b5d4dab03424efcf6375c7cfeed00ea14818c3bf2bc3c89dee2692ef9b56",
+      "byte_identical": true
+    },
+    "hc1_c2": {
+      "source": "art_source/reference/poses/heavy_combo_v02/niulai_hc1_c2_native.png",
+      "source_sha256": "39e379e6a42e97cf4f452175ea65dd55d740d872e9e3f080a41ac4bef77d0712",
+      "byte_identical": true
+    }
+  },
+  "cleanup_note": "R010 only alpha cleanup; no sword drawn, no K5 replacement. Devin adds the slash effect in game."
+}

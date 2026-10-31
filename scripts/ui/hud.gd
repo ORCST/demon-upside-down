@@ -1,7 +1,7 @@
 extends CanvasLayer
 ## 界面：左上血量、右侧连击数、底部操作提示。
 
-const HINT := "A/D 移动  K 跳(二段跳)  J 拳(连按三连)  U 重拳  W+J 上勾拳  空中 J/U  L 冲刺   F1 判定框  R 重来"
+const HINT := "A/D 移动  K 跳(二段跳)  J 大剑(连按三刀)  U 重击  W+J 上挑  空中 J/U  L 冲刺   F1 判定框  R 重来"
 
 var _pips: Pips
 var _combo_label: Label

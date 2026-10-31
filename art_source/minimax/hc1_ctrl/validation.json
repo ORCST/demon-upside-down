@@ -1,0 +1,192 @@
+{
+  "R010_cleanup": {
+    "roi_native": [
+      0,
+      145,
+      92,
+      188
+    ],
+    "removed_foreground_pixels": 1263,
+    "protected_body_pixels": 1494,
+    "retained_RGB_unchanged": true,
+    "outside_ROI_unchanged": true,
+    "body_seed_pixels_unchanged": true,
+    "method": "Frame-specific alpha mask; preserve body warm palette and adjacent dark outline, erase FX colors inside ROI; no body replacement or K5 substitution."
+  },
+  "hc1_ctrl_r004": {
+    "bbox_raw": [
+      46,
+      141,
+      137,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 2431,
+    "sha256": "96876a4e2311775b6eaf85a50cc2107bd7bf1679c1fc7a84a52a8275f7ffab0f"
+  },
+  "hc1_ctrl_r006": {
+    "bbox_raw": [
+      26,
+      148,
+      135,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 2319,
+    "sha256": "df3dc77f8c323f84b3f9c2fafca432b3e79062c3889f4d968bd279e26949f396"
+  },
+  "hc1_ctrl_r008": {
+    "bbox_raw": [
+      65,
+      155,
+      133,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 1794,
+    "sha256": "a43fb46cd454b481d4746c23e9ee18abd58df55db41bff44732c67446cbd1357"
+  },
+  "hc1_ctrl_r010": {
+    "bbox_raw": [
+      75,
+      150,
+      133,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 1630,
+    "sha256": "9f7011e1bfbd609eb68db71549cb479771a4f0517379ea0cc0fa5cc787f63b66"
+  },
+  "hc1_ctrl_r012": {
+    "bbox_raw": [
+      79,
+      152,
+      204,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 2352,
+    "sha256": "0ad9d5e1553589af6302343d4c49a8cfd72bc33e222b3f81fc9995027cc388dd"
+  },
+  "hc1_ctrl_r014": {
+    "bbox_raw": [
+      90,
+      155,
+      169,
+      209
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      -1
+    ],
+    "opaque_pixels": 1702,
+    "sha256": "96812c7bcdf450818c95483d2e779bb313b5ff065e1ed0a30f1b312d3848709b"
+  },
+  "hc1_ctrl_r016": {
+    "bbox_raw": [
+      46,
+      155,
+      131,
+      209
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      -1
+    ],
+    "opaque_pixels": 1714,
+    "sha256": "a267ccc9c608d36d026951f8ce5da31ef5b26ea08259cb025a0d20ef5d65b918"
+  },
+  "hc1_c1": {
+    "bbox_raw": [
+      84,
+      142,
+      196,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 2828,
+    "sha256": "77c3b5d4dab03424efcf6375c7cfeed00ea14818c3bf2bc3c89dee2692ef9b56"
+  },
+  "hc1_c2": {
+    "bbox_raw": [
+      84,
+      125,
+      178,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 2652,
+    "sha256": "39e379e6a42e97cf4f452175ea65dd55d740d872e9e3f080a41ac4bef77d0712"
+  },
+  "idle_tail": {
+    "bbox_raw": [
+      81,
+      122,
+      176,
+      208
+    ],
+    "rendered_last_row": 207,
+    "offset_px": [
+      0,
+      0
+    ],
+    "opaque_pixels": 2784,
+    "sha256": "c6bfc819f3597c06c5af420a751f507bb75dcaba82f8aa9c02b14c6a08e24db8"
+  },
+  "summary": {
+    "native_frames": 10,
+    "selected_generated_frames": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "played_generated_frames": [
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "source_position_preserved": true,
+    "global_pipeline_changed": false,
+    "ComfyUI_started": false,
+    "game_assets_imported": false,
+    "sequence_ticks": 11,
+    "gif_approx_duration_ms": 910,
+    "JSON_duration_seconds": 0.9166666666666666
+  }
+}

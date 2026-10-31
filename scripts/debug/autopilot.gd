@@ -7,10 +7,10 @@ const SCRIPTS := {
 	"demo": [
 		["wait", 30], ["log", "start"],
 		["approach", "Dummy", 30], ["wait", 6],
-		# 三连：刺拳 刺拳 回旋踢
+		# Heavy Combo 三刀：下撩 过肩斜劈 后仰砸地
 		["tap", "attack"], ["wait", 13], ["tap", "attack"], ["wait", 13], ["tap", "attack"],
-		["wait", 12], ["shot", "kick3"], ["log", "kick3"], ["wait", 30],
-		# 刺拳 刺拳 重拳
+		["wait", 40], ["shot", "hc3"], ["log", "hc3"], ["wait", 60],
+		# 两刀接重击
 		["approach", "Dummy", 30],
 		["tap", "attack"], ["wait", 13], ["tap", "attack"], ["wait", 13], ["tap", "heavy"],
 		["wait", 16], ["shot", "power"], ["log", "power"], ["wait", 50],

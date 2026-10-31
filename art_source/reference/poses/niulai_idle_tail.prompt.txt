@@ -1,0 +1,22 @@
+Tool: built-in image_gen
+Reference: D:\GoDOTProject\demon_unside_down\art_source\reference\niulai_idle_canvas256_x4.png
+
+Edit the attached pixel-art sprite of "Niu Lai" (yellow calf greatsword warrior). ADD ONE THING ONLY: a short, thin cow tail.
+
+Tail:
+- Comes out from the back of his dark brown shorts, just below the belt, on the LEFT side of the sprite (his back side, since he faces right)
+- Thin yellow tail (same golden yellow skin colors as his body), about 14-18 native pixels long, hanging down and curving slightly backward and outward in a relaxed S-shape
+- Ends in a small dark brown tuft of hair (3-4 native pixels), like a real calf tail
+- Same 1-native-pixel dark outline as the rest of the sprite
+- It must not touch or overlap the sword
+
+Everything else must stay PIXEL-FOR-PIXEL IDENTICAL to the attached image: same pose, same position on the canvas, same face, same outfit, same sword, same outline, same palette. Only the tail pixels are new.
+
+True pixel art on a NATIVE 256x256 canvas, exported EXACTLY 4x nearest-neighbor to 1024x1024. Use ONLY these 17 colors:
+#281B21 #3F2B25 #4D515D #5B402D #777C86 #7E5B3B #A78150 #B68A24 #B6A385 #BCC3CA #DCCCAB #DD9586 #E8B830 #F2BAA3 #F4D36A #F6EACB #F8F4EA
+No anti-aliasing, no partial transparency. Fully transparent background, no ground, no shadow, no text.
+Save both the 1024x1024 image and the 256x256 native image.
+
+The attached standard reference is 1024x1024. Do not crop, zoom, enlarge, recenter or repaint the calf. The tail is a very small addition beside the back of the shorts in the lower-left part of the calf, not a large extra limb. Keep tail length 14-18 native pixels and small brown tuft 3-4 native pixels. Preserve all original hard 4x pixel blocks and transparent canvas.
+
+Export: Generated tail extracted, normalized to a thin stroke and small tuft, composited onto the original native sprite only in previously transparent pixels. 73 new pixels; all original opaque pixels unchanged. Exact 4x nearest-neighbor export; 17-color palette; binary transparency.

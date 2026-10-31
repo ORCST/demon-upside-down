@@ -1,0 +1,304 @@
+{
+ "hc1": {
+  "path": "res://assets/sprites/niulai3d/hc1.png",
+  "frames": 8,
+  "cols": 8,
+  "w": 163,
+  "h": 69,
+  "x": 46,
+  "y": 139,
+  "sources": [
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F002.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F004.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F006.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F008.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F010.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F012.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F014.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F016.png"
+  ]
+ },
+ "hc2": {
+  "path": "res://assets/sprites/niulai3d/hc2.png",
+  "frames": 7,
+  "cols": 7,
+  "w": 106,
+  "h": 97,
+  "x": 37,
+  "y": 122,
+  "sources": [
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F018.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F020.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F022.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F024.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F026.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F028.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F030.png"
+  ]
+ },
+ "hc3": {
+  "path": "res://assets/sprites/niulai3d/hc3.png",
+  "frames": 14,
+  "cols": 8,
+  "w": 173,
+  "h": 104,
+  "x": 32,
+  "y": 117,
+  "sources": [
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F030.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F052.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F056.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F058.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F060.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F062.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F064.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F066.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F072.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F080.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F088.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F092.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F096.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F100.png"
+  ]
+ },
+ "idle": {
+  "path": "res://assets/sprites/niulai3d/idle.png",
+  "frames": 20,
+  "cols": 8,
+  "w": 84,
+  "h": 69,
+  "x": 87,
+  "y": 139,
+  "sources": [
+   "art_source\\3d\\render\\guard_idle\\native\\F000.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F002.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F004.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F006.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F008.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F010.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F012.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F014.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F016.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F018.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F020.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F022.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F024.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F026.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F028.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F030.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F032.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F034.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F036.png",
+   "art_source\\3d\\render\\guard_idle\\native\\F038.png"
+  ]
+ },
+ "run": {
+  "path": "res://assets/sprites/niulai3d/run.png",
+  "frames": 23,
+  "cols": 8,
+  "w": 87,
+  "h": 65,
+  "x": 91,
+  "y": 143,
+  "sources": [
+   "art_source\\3d\\render\\jog_carry\\native\\F000.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F001.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F002.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F003.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F004.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F005.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F006.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F007.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F008.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F009.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F010.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F011.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F012.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F013.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F014.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F015.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F016.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F017.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F018.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F019.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F020.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F021.png",
+   "art_source\\3d\\render\\jog_carry\\native\\F022.png"
+  ]
+ },
+ "jump": {
+  "path": "res://assets/sprites/niulai3d/jump.png",
+  "frames": 5,
+  "cols": 5,
+  "w": 83,
+  "h": 80,
+  "x": 88,
+  "y": 128,
+  "sources": [
+   "art_source\\3d\\render\\jump_start_carry\\native\\F004.png",
+   "art_source\\3d\\render\\jump_start_carry\\native\\F006.png",
+   "art_source\\3d\\render\\jump_start_carry\\native\\F008.png",
+   "art_source\\3d\\render\\jump_start_carry\\native\\F010.png",
+   "art_source\\3d\\render\\jump_start_carry\\native\\F012.png"
+  ]
+ },
+ "fall": {
+  "path": "res://assets/sprites/niulai3d/fall.png",
+  "frames": 15,
+  "cols": 8,
+  "w": 83,
+  "h": 72,
+  "x": 88,
+  "y": 136,
+  "sources": [
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F000.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F004.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F008.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F012.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F016.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F020.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F024.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F028.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F032.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F036.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F040.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F044.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F048.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F052.png",
+   "art_source\\3d\\render\\jump_loop_carry\\native\\F056.png"
+  ]
+ },
+ "land": {
+  "path": "res://assets/sprites/niulai3d/land.png",
+  "frames": 3,
+  "cols": 3,
+  "w": 91,
+  "h": 60,
+  "x": 88,
+  "y": 148,
+  "sources": [
+   "art_source\\3d\\render\\jump_land_carry\\native\\F002.png",
+   "art_source\\3d\\render\\jump_land_carry\\native\\F004.png",
+   "art_source\\3d\\render\\jump_land_carry\\native\\F006.png"
+  ]
+ },
+ "dash": {
+  "path": "res://assets/sprites/niulai3d/dash.png",
+  "frames": 4,
+  "cols": 4,
+  "w": 86,
+  "h": 63,
+  "x": 96,
+  "y": 145,
+  "sources": [
+   "art_source\\3d\\render\\sprint_carry\\native\\F004.png",
+   "art_source\\3d\\render\\sprint_carry\\native\\F006.png",
+   "art_source\\3d\\render\\sprint_carry\\native\\F008.png",
+   "art_source\\3d\\render\\sprint_carry\\native\\F010.png"
+  ]
+ },
+ "hurt": {
+  "path": "res://assets/sprites/niulai3d/hurt.png",
+  "frames": 9,
+  "cols": 8,
+  "w": 79,
+  "h": 85,
+  "x": 87,
+  "y": 123,
+  "sources": [
+   "art_source\\3d\\render\\hit\\native\\F000.png",
+   "art_source\\3d\\render\\hit\\native\\F001.png",
+   "art_source\\3d\\render\\hit\\native\\F002.png",
+   "art_source\\3d\\render\\hit\\native\\F003.png",
+   "art_source\\3d\\render\\hit\\native\\F004.png",
+   "art_source\\3d\\render\\hit\\native\\F005.png",
+   "art_source\\3d\\render\\hit\\native\\F006.png",
+   "art_source\\3d\\render\\hit\\native\\F007.png",
+   "art_source\\3d\\render\\hit\\native\\F008.png"
+  ]
+ },
+ "death": {
+  "path": "res://assets/sprites/niulai3d/death.png",
+  "frames": 21,
+  "cols": 8,
+  "w": 141,
+  "h": 102,
+  "x": 23,
+  "y": 114,
+  "sources": [
+   "art_source\\3d\\render\\death\\native\\F000.png",
+   "art_source\\3d\\render\\death\\native\\F002.png",
+   "art_source\\3d\\render\\death\\native\\F004.png",
+   "art_source\\3d\\render\\death\\native\\F006.png",
+   "art_source\\3d\\render\\death\\native\\F008.png",
+   "art_source\\3d\\render\\death\\native\\F010.png",
+   "art_source\\3d\\render\\death\\native\\F012.png",
+   "art_source\\3d\\render\\death\\native\\F014.png",
+   "art_source\\3d\\render\\death\\native\\F016.png",
+   "art_source\\3d\\render\\death\\native\\F018.png",
+   "art_source\\3d\\render\\death\\native\\F020.png",
+   "art_source\\3d\\render\\death\\native\\F022.png",
+   "art_source\\3d\\render\\death\\native\\F024.png",
+   "art_source\\3d\\render\\death\\native\\F026.png",
+   "art_source\\3d\\render\\death\\native\\F028.png",
+   "art_source\\3d\\render\\death\\native\\F030.png",
+   "art_source\\3d\\render\\death\\native\\F032.png",
+   "art_source\\3d\\render\\death\\native\\F034.png",
+   "art_source\\3d\\render\\death\\native\\F036.png",
+   "art_source\\3d\\render\\death\\native\\F038.png",
+   "art_source\\3d\\render\\death\\native\\F040.png"
+  ]
+ },
+ "atk_power": {
+  "path": "res://assets/sprites/niulai3d/atk_power.png",
+  "frames": 2,
+  "cols": 2,
+  "w": 168,
+  "h": 65,
+  "x": 37,
+  "y": 150,
+  "sources": [
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F060.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F064.png"
+  ]
+ },
+ "atk_uppercut": {
+  "path": "res://assets/sprites/niulai3d/atk_uppercut.png",
+  "frames": 2,
+  "cols": 2,
+  "w": 51,
+  "h": 86,
+  "x": 90,
+  "y": 122,
+  "sources": [
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F008.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F022.png"
+  ]
+ },
+ "atk_air": {
+  "path": "res://assets/sprites/niulai3d/atk_air.png",
+  "frames": 2,
+  "cols": 2,
+  "w": 68,
+  "h": 87,
+  "x": 72,
+  "y": 132,
+  "sources": [
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F020.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F026.png"
+  ]
+ },
+ "atk_spike": {
+  "path": "res://assets/sprites/niulai3d/atk_spike.png",
+  "frames": 2,
+  "cols": 2,
+  "w": 107,
+  "h": 100,
+  "x": 97,
+  "y": 117,
+  "sources": [
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F062.png",
+   "art_source\\3d\\render\\heavy_combo_v01\\native\\F066.png"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+  "file": "art_source/environment/forest_scene_concept_v01/forest_moonlight_ruins_v01.png",
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "sha256": "e765418df90407692aba75b062aa019976a61d581dad8133d9718f5cf6138b94",
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "original": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-fe72be8d-f888-484b-9bac-1d2275ef6bb1.png",
+  "references": [
+    "art_source/environment/castle_style_studies_20261029/castle_C_cartoon_v02.png",
+    "art_source/reference/poses/niulai_hd_idle.png"
+  ],
+  "status": "user_approved_for_asset_separation_2026_10_29",
+  "separated_assets": "art_source/environment/forest_v01/",
+  "technical_limit": "Generated concept image; not a verified640x360 native grid,32-color production layer or real game screenshot."
+}

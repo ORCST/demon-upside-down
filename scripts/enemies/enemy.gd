@@ -176,6 +176,7 @@ func _die(hit: HitData) -> void:
 
 func _respawn() -> void:
 	global_position = _spawn_pos
+	reset_physics_interpolation()
 	velocity = Vector2.ZERO
 	health = max_health
 	state = State.ACT

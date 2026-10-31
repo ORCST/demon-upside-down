@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/world/main.gd" id="1_main"]
 [ext_resource type="Script" path="res://scripts/world/block.gd" id="2_block"]
-[ext_resource type="Script" path="res://scripts/world/backdrop.gd" id="3_backdrop"]
+[ext_resource type="Script" path="res://scripts/world/castle_background.gd" id="3_backdrop"]
 [ext_resource type="PackedScene" path="res://scenes/player.tscn" id="4_player"]
 [ext_resource type="PackedScene" path="res://scenes/enemies/dummy.tscn" id="5_dummy"]
 [ext_resource type="PackedScene" path="res://scenes/enemies/grunt.tscn" id="6_grunt"]
@@ -32,10 +32,7 @@ anchor_bottom = 1.0
 texture = SubResource("GradientTexture2D_sky")
 expand_mode = 1
 
-[node name="Far" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0.35, 0.6)
-
-[node name="Backdrop" type="Node2D" parent="Far"]
+[node name="Castle" type="Node2D" parent="."]
 script = ExtResource("3_backdrop")
 
 [node name="World" type="Node2D" parent="."]

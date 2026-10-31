@@ -1,0 +1,135 @@
+{
+  "checked_at_utc": "2026-10-16T07:00:42.399256+00:00",
+  "status": "delivery_verified_art_quality_rejected",
+  "raw_frames_verified": 117,
+  "generated_trials": 3,
+  "videos_verified": [
+    {
+      "path": "depth_original_attempt02/generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "c4e5b5f9832a29109ba3971368994cb30914b9451f87d506c3ecdacd305efb0b"
+    },
+    {
+      "path": "depth_original_attempt02/reference_vs_generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        1152,
+        420
+      ],
+      "sha256": "2a352e7b7213165efada93a27b389c7f6b7326629a1115ad5ee95c1a7a366fca"
+    },
+    {
+      "path": "depth_original_attempt02/reference_vs_generated_half_speed.mp4",
+      "frames": 39,
+      "fps": 12,
+      "size": [
+        1152,
+        420
+      ],
+      "sha256": "958bc8e0985e21411671cf3a0f32f700568a8f3872f5bab8dfd7e73e70dbda6b"
+    },
+    {
+      "path": "depth_proxy/generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "8749992b14ce058a249176e17550d3b519b481ec0fdea1fac6ccf657d2314d79"
+    },
+    {
+      "path": "depth_proxy/reference_vs_generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        1152,
+        420
+      ],
+      "sha256": "43007d7bc9ed29c76cea4edca30151d6b55a580cef5b11d702e41dd5da6ae861"
+    },
+    {
+      "path": "depth_proxy/reference_vs_generated_half_speed.mp4",
+      "frames": 39,
+      "fps": 12,
+      "size": [
+        1152,
+        420
+      ],
+      "sha256": "11e9ee7ac3a88b98557b314466ce0488f501334dc68f6776e6c3be5514f87cce"
+    },
+    {
+      "path": "lineart_proxy/generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "955bebe996d18b1567132685eafa846ad861ed853d8ea62b22db59202da24dc9"
+    },
+    {
+      "path": "lineart_proxy/reference_vs_generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        1152,
+        420
+      ],
+      "sha256": "3fe6c0563a0b7fe34b9f34a054fda4cfaa255903ffb8ecd09d8dd472b5853289"
+    },
+    {
+      "path": "lineart_proxy/reference_vs_generated_half_speed.mp4",
+      "frames": 39,
+      "fps": 12,
+      "size": [
+        1152,
+        420
+      ],
+      "sha256": "135a78f439311d30734609c721e939c8477c82a8536b82f3d0f066748e92b642"
+    },
+    {
+      "path": "trial_compare.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        1536,
+        340
+      ],
+      "sha256": "d3d59c14ad288c20a12dd7d57141ae32cf1ecbb33a27a258f52af7f1fb45f8c3"
+    },
+    {
+      "path": "trial_compare_half_speed.mp4",
+      "frames": 39,
+      "fps": 12,
+      "size": [
+        1536,
+        340
+      ],
+      "sha256": "a0e5a8c127cd0ecd537167bd1534deab5b43362e01621c6ee220f6dd6984e02d"
+    }
+  ],
+  "control_video_verification": "art_source/control/heavy_combo_v02_39f/verification.json",
+  "old_v01_files_byte_identical": 402,
+  "control_video_connected_all_trials": true,
+  "guides_pixel_frames_all_trials": [
+    8,
+    12
+  ],
+  "comfy_server_closed": true,
+  "legacy_database_restored_byte_identical": true,
+  "patch_size_verified": 2296635360,
+  "patch_sha256_verified_at_install": "9c645c0a308c8af361efd43b409710f6f8fec0db297c29503e141a84991fed0c",
+  "local_doc_links_valid": true,
+  "sizes_MiB": {
+    "art_source\\minimax\\heavy_combo_ctrl_v01": 55.15,
+    "art_source\\control\\heavy_combo_v02_39f": 17.08
+  },
+  "game_assets_imported": false
+}

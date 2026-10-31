@@ -1,0 +1,9 @@
+Tool: built-in image_gen
+Image1: art_source/reference/poses/_codex/hc1_v02_attempts/k4_a2_raw.png
+Image2: art_source/reference/poses/niulai_idle_tail_x4.png
+
+Edit ONLY the calf pose in Image1. This is a DEEP BACKWARD RECOIL before launching to screen RIGHT.
+Keep the LOWER BODY and hooves exactly as in Image1: rear LEFT leg folded under the seat, front RIGHT leg extended forward and planted. Keep the same head SIZE and facial identity, pixel style, colors, hidden sword grip, tail and transparent background.
+The one correction: hinge the ENTIRE UPPER BODY BACKWARD toward screen LEFT at the waist. Move chest, neck and head left together by about HALF THE HEAD WIDTH relative to the existing hips and legs. Do not merely turn the face. Keep face pointing RIGHT. The head is now positioned far behind the front foot; the muzzle should be vertically above the PELVIS / REAR THIGH, not over the front thigh. The torso slopes BACK to screen LEFT, as if loading a spring. Belly folds into the lap, shoulders drawn back, chin tucked, hands still gripping the sword behind the rear waist.
+Keep the deep squat extremely low, with hips only just above heels. No standing or straightening. Do not add a visible steel blade; the sword is completely behind the torso. Do not change the legs, feet, sword identity, outfit, face design or tail.
+Image2 is the original calf identity reference. Draw one small pixel sprite with broad margins on a transparent standard256x256 canvas enlarged4x. Same native head size as the original calf, 17-color palette, hard pixel grid, dark1px outline, no scene or text.

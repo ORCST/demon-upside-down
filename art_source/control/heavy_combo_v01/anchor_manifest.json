@@ -1,0 +1,69 @@
+{
+  "fps": 24,
+  "size": [
+    768,
+    768
+  ],
+  "control_frames": 24,
+  "anchors": [
+    {
+      "frame_index": 0,
+      "time_seconds": 0.0,
+      "pose": "idle_tail",
+      "role": "first_frame",
+      "source": "art_source/reference/poses/niulai_idle_tail_native.png",
+      "input": "inputs/R000_idle_tail_green.png",
+      "offset_native_px": [
+        0,
+        0
+      ],
+      "source_sha256": "c6bfc819f3597c06c5af420a751f507bb75dcaba82f8aa9c02b14c6a08e24db8",
+      "input_sha256": "84e7834431633baaddb080ad25ddd89b94299abab79592b1316c04e70914c5f4"
+    },
+    {
+      "frame_index": 5,
+      "time_seconds": 0.20833333333333334,
+      "pose": "hc1_k2",
+      "role": "optional_intermediate_guide",
+      "source": "art_source/reference/poses/heavy_combo_v02/niulai_hc1_k2_native.png",
+      "input": "inputs/R005_hc1_k2_green.png",
+      "offset_native_px": [
+        0,
+        0
+      ],
+      "source_sha256": "4d392694ea08cf81dcc870330d102a977c24dee736dbd629c9dede4584ba7907",
+      "input_sha256": "b1fcda9759003bad92fd6cafc4ec46b13fdc9dbe8b92c73ad71305b93d1199ee"
+    },
+    {
+      "frame_index": 8,
+      "time_seconds": 0.3333333333333333,
+      "pose": "hc1_k4",
+      "role": "optional_intermediate_guide",
+      "source": "art_source/reference/poses/heavy_combo_v02/niulai_hc1_k4_native.png",
+      "input": "inputs/R008_hc1_k4_green.png",
+      "offset_native_px": [
+        0,
+        0
+      ],
+      "source_sha256": "ab1ef88b574342855eae2c4381883f35536ca53bb6d8748da6683be2ae0bc15e",
+      "input_sha256": "1c8757abc0461fa08f0a45e9202912f3accbf85b8c7b9731fc8eb2f9d3260958"
+    },
+    {
+      "frame_index": 12,
+      "time_seconds": 0.5,
+      "pose": "hc1_k6",
+      "role": "optional_intermediate_guide",
+      "source": "art_source/reference/poses/heavy_combo_v02/niulai_hc1_k6_native.png",
+      "input": "inputs/R012_hc1_k6_green.png",
+      "offset_native_px": [
+        0,
+        0
+      ],
+      "source_sha256": "a132eeff1d4002d2b9dbe8d2af6972d799cb3f9911af46c31a9808d66d22b407",
+      "input_sha256": "83e08e98de30a5fdf6377b72034cb5b4604841f338e734747cced35ec124780f"
+    }
+  ],
+  "status": "prepared_only_not_submitted",
+  "node_support": "Intermediate guide support must be checked after the approved ComfyUI upgrade.",
+  "temporal_note": "Masters are exactly R000-R023. The installed H3 node snaps length up to 17k+5 (24 -> 39). Resolve trimming/padding explicitly before generation; no duplicated frames or retiming are baked into these controls."
+}

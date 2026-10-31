@@ -1,0 +1,26 @@
+{
+  "cut1": {
+    "native_frames": 20,
+    "opaque_px_min": 2638,
+    "opaque_px_max": 2916,
+    "opaque_px_first": 2724
+  },
+  "cut1_recover": {
+    "native_frames": 11,
+    "opaque_px_min": 2708,
+    "opaque_px_max": 2848,
+    "opaque_px_first": 2800
+  },
+  "cut2": {
+    "native_frames": 20,
+    "opaque_px_min": 2258,
+    "opaque_px_max": 7083,
+    "opaque_px_first": 2783
+  },
+  "cut1_then_recover": {
+    "gif_frames": 30
+  },
+  "cut1_then_cut2": {
+    "gif_frames": 39
+  }
+}

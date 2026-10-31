@@ -1,0 +1,37 @@
+{
+  "tool": "built-in image_gen",
+  "target": "K4 only",
+  "prior_v01_attempts": 1,
+  "new_calls": 3,
+  "total_k4_attempts": 4,
+  "selected_attempt_in_v02": 3,
+  "records": [
+    {
+      "attempt_in_v02": 1,
+      "lifetime_attempt": 2,
+      "raw_path": "art_source/reference/poses/_codex/hc1_v02_attempts/k4_a1_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_v02_attempts/k4_a1.prompt.txt",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-9915a81a-dc33-42f4-863c-269e3925defe.png",
+      "selected": false,
+      "review": "Sword hidden and rear loaded, but crouch too tall"
+    },
+    {
+      "attempt_in_v02": 2,
+      "lifetime_attempt": 3,
+      "raw_path": "art_source/reference/poses/_codex/hc1_v02_attempts/k4_a2_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_v02_attempts/k4_a2.prompt.txt",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-eb480eae-8859-4ccb-aa9b-647cec879247.png",
+      "selected": false,
+      "review": "Lower squat but upper body still too far forward"
+    },
+    {
+      "attempt_in_v02": 3,
+      "lifetime_attempt": 4,
+      "raw_path": "art_source/reference/poses/_codex/hc1_v02_attempts/k4_a3_raw.png",
+      "prompt_path": "art_source/reference/poses/_codex/hc1_v02_attempts/k4_a3.prompt.txt",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13f04-7428-7ba2-a537-9980eae2b455\\exec-6856b49c-c953-4cef-96bc-07148eba694f.png",
+      "selected": true,
+      "review": "Best backward recoil; head size and crouch depth require export measurement"
+    }
+  ]
+}

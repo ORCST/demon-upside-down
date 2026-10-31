@@ -1,0 +1,550 @@
+{
+  "status": "reviewed_rejected_for_game_import",
+  "variant": "proxy",
+  "control_kind": "lineart",
+  "source_frames": 39,
+  "fps": 24,
+  "metrics": [
+    {
+      "frame": 0,
+      "raw_foreground_pixels": 24322,
+      "raw_bbox": [
+        244,
+        366,
+        527,
+        623
+      ],
+      "native_opaque_pixels": 2711,
+      "green_background_fraction": 0.9579942491319444
+    },
+    {
+      "frame": 1,
+      "raw_foreground_pixels": 24069,
+      "raw_bbox": [
+        244,
+        370,
+        527,
+        623
+      ],
+      "native_opaque_pixels": 2685,
+      "green_background_fraction": 0.9581688774956597
+    },
+    {
+      "frame": 2,
+      "raw_foreground_pixels": 20783,
+      "raw_bbox": [
+        270,
+        400,
+        499,
+        623
+      ],
+      "native_opaque_pixels": 2297,
+      "green_background_fraction": 0.9636433919270834
+    },
+    {
+      "frame": 3,
+      "raw_foreground_pixels": 17152,
+      "raw_bbox": [
+        224,
+        392,
+        409,
+        623
+      ],
+      "native_opaque_pixels": 1910,
+      "green_background_fraction": 0.9698062472873263
+    },
+    {
+      "frame": 4,
+      "raw_foreground_pixels": 20562,
+      "raw_bbox": [
+        140,
+        426,
+        411,
+        623
+      ],
+      "native_opaque_pixels": 2282,
+      "green_background_fraction": 0.9641520182291666
+    },
+    {
+      "frame": 5,
+      "raw_foreground_pixels": 21008,
+      "raw_bbox": [
+        134,
+        426,
+        413,
+        623
+      ],
+      "native_opaque_pixels": 2332,
+      "green_background_fraction": 0.9633195665147569
+    },
+    {
+      "frame": 6,
+      "raw_foreground_pixels": 19422,
+      "raw_bbox": [
+        85,
+        450,
+        399,
+        623
+      ],
+      "native_opaque_pixels": 2148,
+      "green_background_fraction": 0.9662238226996528
+    },
+    {
+      "frame": 7,
+      "raw_foreground_pixels": 19071,
+      "raw_bbox": [
+        86,
+        450,
+        399,
+        623
+      ],
+      "native_opaque_pixels": 2112,
+      "green_background_fraction": 0.9666273328993056
+    },
+    {
+      "frame": 8,
+      "raw_foreground_pixels": 16047,
+      "raw_bbox": [
+        194,
+        464,
+        399,
+        623
+      ],
+      "native_opaque_pixels": 1794,
+      "green_background_fraction": 0.9722086588541666
+    },
+    {
+      "frame": 9,
+      "raw_foreground_pixels": 15756,
+      "raw_bbox": [
+        192,
+        468,
+        399,
+        623
+      ],
+      "native_opaque_pixels": 1757,
+      "green_background_fraction": 0.9726765950520834
+    },
+    {
+      "frame": 10,
+      "raw_foreground_pixels": 24278,
+      "raw_bbox": [
+        54,
+        458,
+        399,
+        623
+      ],
+      "native_opaque_pixels": 1931,
+      "green_background_fraction": 0.9574178059895834
+    },
+    {
+      "frame": 11,
+      "raw_foreground_pixels": 38907,
+      "raw_bbox": [
+        112,
+        454,
+        685,
+        623
+      ],
+      "native_opaque_pixels": 1540,
+      "green_background_fraction": 0.9316694471571181
+    },
+    {
+      "frame": 12,
+      "raw_foreground_pixels": 21265,
+      "raw_bbox": [
+        238,
+        456,
+        611,
+        623
+      ],
+      "native_opaque_pixels": 2366,
+      "green_background_fraction": 0.9628584120008681
+    },
+    {
+      "frame": 13,
+      "raw_foreground_pixels": 20921,
+      "raw_bbox": [
+        240,
+        456,
+        611,
+        623
+      ],
+      "native_opaque_pixels": 2337,
+      "green_background_fraction": 0.9634145100911459
+    },
+    {
+      "frame": 14,
+      "raw_foreground_pixels": 19739,
+      "raw_bbox": [
+        150,
+        412,
+        505,
+        623
+      ],
+      "native_opaque_pixels": 1883,
+      "green_background_fraction": 0.9646080864800347
+    },
+    {
+      "frame": 15,
+      "raw_foreground_pixels": 18712,
+      "raw_bbox": [
+        80,
+        444,
+        390,
+        623
+      ],
+      "native_opaque_pixels": 2080,
+      "green_background_fraction": 0.9672258165147569
+    },
+    {
+      "frame": 16,
+      "raw_foreground_pixels": 16358,
+      "raw_bbox": [
+        142,
+        452,
+        393,
+        624
+      ],
+      "native_opaque_pixels": 1810,
+      "green_background_fraction": 0.9714389377170138
+    },
+    {
+      "frame": 17,
+      "raw_foreground_pixels": 16897,
+      "raw_bbox": [
+        140,
+        452,
+        395,
+        624
+      ],
+      "native_opaque_pixels": 1869,
+      "green_background_fraction": 0.9706573486328125
+    },
+    {
+      "frame": 18,
+      "raw_foreground_pixels": 16083,
+      "raw_bbox": [
+        144,
+        456,
+        387,
+        625
+      ],
+      "native_opaque_pixels": 1777,
+      "green_background_fraction": 0.97186279296875
+    },
+    {
+      "frame": 19,
+      "raw_foreground_pixels": 16572,
+      "raw_bbox": [
+        134,
+        458,
+        385,
+        625
+      ],
+      "native_opaque_pixels": 1843,
+      "green_background_fraction": 0.9709879557291666
+    },
+    {
+      "frame": 20,
+      "raw_foreground_pixels": 17190,
+      "raw_bbox": [
+        158,
+        416,
+        385,
+        625
+      ],
+      "native_opaque_pixels": 1901,
+      "green_background_fraction": 0.9697062174479166
+    },
+    {
+      "frame": 21,
+      "raw_foreground_pixels": 18775,
+      "raw_bbox": [
+        228,
+        346,
+        385,
+        625
+      ],
+      "native_opaque_pixels": 2082,
+      "green_background_fraction": 0.9673682318793403
+    },
+    {
+      "frame": 22,
+      "raw_foreground_pixels": 15757,
+      "raw_bbox": [
+        252,
+        358,
+        387,
+        625
+      ],
+      "native_opaque_pixels": 1441,
+      "green_background_fraction": 0.9706200493706597
+    },
+    {
+      "frame": 23,
+      "raw_foreground_pixels": 15796,
+      "raw_bbox": [
+        266,
+        384,
+        439,
+        625
+      ],
+      "native_opaque_pixels": 1435,
+      "green_background_fraction": 0.9703267415364584
+    },
+    {
+      "frame": 24,
+      "raw_foreground_pixels": 30899,
+      "raw_bbox": [
+        156,
+        340,
+        453,
+        624
+      ],
+      "native_opaque_pixels": 1830,
+      "green_background_fraction": 0.9453921847873263
+    },
+    {
+      "frame": 25,
+      "raw_foreground_pixels": 19521,
+      "raw_bbox": [
+        84,
+        450,
+        457,
+        623
+      ],
+      "native_opaque_pixels": 2159,
+      "green_background_fraction": 0.9657151963975694
+    },
+    {
+      "frame": 26,
+      "raw_foreground_pixels": 18313,
+      "raw_bbox": [
+        68,
+        446,
+        427,
+        689
+      ],
+      "native_opaque_pixels": 2009,
+      "green_background_fraction": 0.9669816758897569
+    },
+    {
+      "frame": 27,
+      "raw_foreground_pixels": 18820,
+      "raw_bbox": [
+        98,
+        423,
+        415,
+        625
+      ],
+      "native_opaque_pixels": 2083,
+      "green_background_fraction": 0.9669053819444444
+    },
+    {
+      "frame": 28,
+      "raw_foreground_pixels": 18626,
+      "raw_bbox": [
+        108,
+        404,
+        415,
+        625
+      ],
+      "native_opaque_pixels": 2065,
+      "green_background_fraction": 0.9674716525607638
+    },
+    {
+      "frame": 29,
+      "raw_foreground_pixels": 18540,
+      "raw_bbox": [
+        108,
+        400,
+        415,
+        625
+      ],
+      "native_opaque_pixels": 2051,
+      "green_background_fraction": 0.9675750732421875
+    },
+    {
+      "frame": 30,
+      "raw_foreground_pixels": 14862,
+      "raw_bbox": [
+        248,
+        452,
+        391,
+        661
+      ],
+      "native_opaque_pixels": 1489,
+      "green_background_fraction": 0.9701758490668403
+    },
+    {
+      "frame": 31,
+      "raw_foreground_pixels": 24782,
+      "raw_bbox": [
+        154,
+        442,
+        439,
+        739
+      ],
+      "native_opaque_pixels": 2603,
+      "green_background_fraction": 0.9527960883246528
+    },
+    {
+      "frame": 32,
+      "raw_foreground_pixels": 17848,
+      "raw_bbox": [
+        150,
+        442,
+        425,
+        643
+      ],
+      "native_opaque_pixels": 1982,
+      "green_background_fraction": 0.9680464002821181
+    },
+    {
+      "frame": 33,
+      "raw_foreground_pixels": 15426,
+      "raw_bbox": [
+        124,
+        447,
+        378,
+        627
+      ],
+      "native_opaque_pixels": 1706,
+      "green_background_fraction": 0.9729326036241319
+    },
+    {
+      "frame": 34,
+      "raw_foreground_pixels": 15510,
+      "raw_bbox": [
+        122,
+        454,
+        375,
+        627
+      ],
+      "native_opaque_pixels": 1726,
+      "green_background_fraction": 0.9729461669921875
+    },
+    {
+      "frame": 35,
+      "raw_foreground_pixels": 15318,
+      "raw_bbox": [
+        144,
+        458,
+        401,
+        625
+      ],
+      "native_opaque_pixels": 1698,
+      "green_background_fraction": 0.9732615152994791
+    },
+    {
+      "frame": 36,
+      "raw_foreground_pixels": 15257,
+      "raw_bbox": [
+        158,
+        458,
+        403,
+        625
+      ],
+      "native_opaque_pixels": 1700,
+      "green_background_fraction": 0.9733700222439237
+    },
+    {
+      "frame": 37,
+      "raw_foreground_pixels": 15260,
+      "raw_bbox": [
+        162,
+        458,
+        403,
+        625
+      ],
+      "native_opaque_pixels": 1694,
+      "green_background_fraction": 0.9733513726128472
+    },
+    {
+      "frame": 38,
+      "raw_foreground_pixels": 15262,
+      "raw_bbox": [
+        164,
+        458,
+        403,
+        625
+      ],
+      "native_opaque_pixels": 1692,
+      "green_background_fraction": 0.973480224609375
+    }
+  ],
+  "videos_verified": [
+    {
+      "path": "generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        768,
+        768
+      ]
+    },
+    {
+      "path": "reference_vs_generated.mp4",
+      "frames": 39,
+      "fps": 24,
+      "size": [
+        1152,
+        420
+      ]
+    },
+    {
+      "path": "reference_vs_generated_half_speed.mp4",
+      "frames": 39,
+      "fps": 12,
+      "size": [
+        1152,
+        420
+      ]
+    }
+  ],
+  "comparison_fixed_crop": [
+    36,
+    303,
+    704,
+    758
+  ],
+  "review_focus": [
+    "R000-R004 pose melting",
+    "hand inside belly / stretched arm",
+    "rigid sword shape and trajectory",
+    "hornless head, tail and body consistency",
+    "R013-R038 unanchored motion"
+  ],
+  "native_review_pipeline": "Existing key_green/drop_fx/keep_body/to_native/denoise/outline, origin0 scale3; review only, no asset import. Raw contact sheet and comparison retain model artifacts.",
+  "native_review_fps": 12,
+  "native_preview_source_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38
+  ],
+  "manual_verdict": "rejected_for_game_import",
+  "manual_findings": [
+    "Canny does not remove the bright sword trails at R010 and R024.",
+    "R003-R006 face turns forward and loses the approved calf profile.",
+    "From R014 onward the face disappears or turns away; head and ears form a flat silhouette.",
+    "Some coarse motion follows the reference, but appearance and rigid sword continuity fail."
+  ]
+}

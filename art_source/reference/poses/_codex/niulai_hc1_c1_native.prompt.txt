@@ -1,0 +1,27 @@
+Tool: built-in image_gen
+Image 1: art_source/reference/poses/niulai_idle_tail_x4.png
+Image 2: art_source/reference/poses/_codex/hc1_attempts/k6_a1_raw.png
+
+GLOBAL RULES (apply to every Niu Lai sprite):
+- The attached reference image is the FINAL approved sprite of "Niu Lai" (yellow calf greatsword warrior) in his idle stance, on the standard canvas. Keep his identity exactly: hornless lumpy head, golden yellow skin, pale cream muzzle and chin, small pointed ear with pink inside, ONE thick dark furrowed eyebrow, sleepy deadpan eye, soft chubby childlike body with round belly and short limbs, bare yellow stubby hands, dark brown hooves, dark brown cloth shorts, brown leather belt, and a short thin yellow cow tail with a dark brown tuft at the tip, coming out from the back of the shorts. The tail is always present; it may swing naturally with the pose.
+- The greatsword is the same as in the reference: wide plain steel-gray blade with ONE lighter edge line, dark crossguard, brown grip. Same size; never shorten, lengthen or redesign it.
+- True pixel art on a NATIVE 256x256 canvas, exported EXACTLY 4x nearest-neighbor to 1024x1024. One consistent square pixel grid, no anti-aliasing, no blur, no gradients, no half pixels, no partial transparency.
+- Use ONLY this 17-color palette, no new colors:
+  #281B21 #3F2B25 #4D515D #5B402D #777C86 #7E5B3B #A78150 #B68A24 #B6A385 #BCC3CA #DCCCAB #DD9586 #E8B830 #F2BAA3 #F4D36A #F6EACB #F8F4EA
+- One-native-pixel dark outline (#281B21) around the whole character and the sword. Light from the top-left, 2-3 flat tones per material.
+- STRICT right-facing true profile: body and head point RIGHT, only one eye visible, muzzle points right. (Unless the pose says otherwise.)
+- Same scale as the reference: the character is about 64 native pixels tall when standing upright.
+- GROUND POSES: the soles of the hooves stand on native row y=207 (ground line y=208), exactly like the reference. The character's body stays centered around native x=112.
+- AIR POSES: keep the body centered around native x=112, with the lowest hoof around native y=170.
+- Everything (character and the whole sword) stays inside the canvas with at least 8 native pixels of margin.
+- NO motion blur, NO slash trails, NO speed lines, NO impact effects, NO ground, NO shadow, NO text. Fully transparent background.
+
+Image 1: original approved idle calf identity, pixel style and sword. Image2: the generated K6 finishing pose, for continuity of the preceding attack. No mannequin reference exists for this recovery.
+
+POSE C1: First recovery pose, immediately AFTER Image2 (K6). Keep feet planted but begin drawing the right elbow and hand BACK from full extension toward the chest. The sword is now in FRONT of the body at about 15-20 degrees UP to screen RIGHT, having just lifted from the low forward finishing angle. Torso is halfway upright, knees still moderately bent, stance a little narrower than K6. The empty left hand is returning toward the front of the waist. This is a small relaxed recovery, not a new attack or high wind-up.
+OUTPUT: ONE small right-facing calf sprite on the standard transparent 1024x1024 canvas, full original rigid gray sword and attached short tufted cow tail visible, body center native x≈112 and ground row207. Same native body size and head shape as Image1. No text or effects.
+
+
+Original image_gen output: art_source/reference/poses/_codex/hc1_attempts/c1_a1_raw.png
+Actual raw dimensions: (1254, 1254)
+Pixel export: area downsample to 256x256, binary alpha, approved palette snap, existing denoise/outline. Original raw retained unchanged.

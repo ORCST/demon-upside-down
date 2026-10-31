@@ -1,0 +1,244 @@
+{
+ "source": "outputs\\motion_reference_20261015\\ual2_review.blend",
+ "ual1": "outputs\\motion_reference_20261015\\sources\\Universal Animation Library[Standard]\\Universal Animation Library[Standard]\\Unreal-Godot\\UAL1_Standard.glb",
+ "clips": {
+  "heavy_combo": {
+   "source_action": "Sword_Heavy_Combo",
+   "frames": [
+    0,
+    104
+   ],
+   "ground_shift_range": [
+    -0.0163,
+    0.0813
+   ]
+  },
+  "sword_idle": {
+   "source_action": "Sword_Idle",
+   "frames": [
+    0,
+    40
+   ],
+   "ground_shift_range": [
+    0.0125,
+    0.0158
+   ]
+  },
+  "jog": {
+   "source_action": "Jog_Fwd_Loop",
+   "frames": [
+    0,
+    22
+   ],
+   "ground_shift_range": [
+    -0.0213,
+    0.0543
+   ],
+   "sword_arm": "Sword_Idle frame 0 (relative to spine_03)"
+  },
+  "sprint": {
+   "source_action": "Sprint_Loop",
+   "frames": [
+    0,
+    16
+   ],
+   "ground_shift_range": [
+    -0.0239,
+    0.0413
+   ],
+   "sword_arm": "Sword_Idle frame 0 (relative to spine_03)"
+  },
+  "jump_start": {
+   "source_action": "Jump_Start",
+   "frames": [
+    0,
+    32
+   ],
+   "ground_shift_range": [
+    -0.0321,
+    0.087
+   ],
+   "sword_arm": "Sword_Idle frame 0 (relative to spine_03)"
+  },
+  "jump_loop": {
+   "source_action": "Jump_Loop",
+   "frames": [
+    0,
+    60
+   ],
+   "ground_shift_range": [
+    0.0686,
+    0.0806
+   ],
+   "sword_arm": "Sword_Idle frame 0 (relative to spine_03)"
+  },
+  "jump_land": {
+   "source_action": "Jump_Land",
+   "frames": [
+    0,
+    30
+   ],
+   "ground_shift_range": [
+    -0.0017,
+    0.0291
+   ],
+   "sword_arm": "Sword_Idle frame 0 (relative to spine_03)"
+  },
+  "roll": {
+   "source_action": "Roll",
+   "frames": [
+    0,
+    35
+   ],
+   "ground_shift_range": [
+    -0.1671,
+    0.2688
+   ],
+   "sword_arm": "Sword_Idle frame 0 (relative to spine_03)"
+  },
+  "hit": {
+   "source_action": "Hit_Chest",
+   "frames": [
+    0,
+    8
+   ],
+   "ground_shift_range": [
+    0.0018,
+    0.0103
+   ]
+  },
+  "death": {
+   "source_action": "Death01",
+   "frames": [
+    0,
+    57
+   ],
+   "ground_shift_range": [
+    0.0065,
+    0.3788
+   ]
+  }
+ },
+ "stub_vertices_removed": 146,
+ "unweighted_vertices": 0,
+ "pelvis_translation_ratio": 0.26931031424035723,
+ "torso_yaw_map": "away/back -> profile; toward camera -> -40*sin(-yaw)",
+ "head_pitch_deg": [
+  -14.999999999999998,
+  10.0
+ ],
+ "head_roll_deg": 20.0,
+ "source_pelvis_yaw_deg": {
+  "0": -13,
+  "1": -18,
+  "2": -29,
+  "3": -45,
+  "4": -63,
+  "5": -81,
+  "6": -96,
+  "7": -108,
+  "8": -112,
+  "9": -89,
+  "10": -20,
+  "11": 14,
+  "12": 75,
+  "13": 107,
+  "14": 112,
+  "15": 116,
+  "16": 118,
+  "17": 119,
+  "18": 120,
+  "19": 120,
+  "20": 118,
+  "21": 114,
+  "22": 106,
+  "23": 93,
+  "24": 74,
+  "25": 48,
+  "26": 17,
+  "27": -15,
+  "28": -71,
+  "29": -107,
+  "30": -109,
+  "31": -112,
+  "32": -132,
+  "33": -156,
+  "34": -179,
+  "35": 162,
+  "36": 150,
+  "37": 144,
+  "38": 139,
+  "39": 133,
+  "40": 121,
+  "41": 98,
+  "42": 62,
+  "43": 18,
+  "44": -28,
+  "45": -66,
+  "46": -89,
+  "47": -94,
+  "48": -94,
+  "49": -95,
+  "50": -95,
+  "51": -95,
+  "52": -95,
+  "53": -95,
+  "54": -91,
+  "55": -84,
+  "56": -75,
+  "57": -65,
+  "58": -56,
+  "59": -49,
+  "60": -42,
+  "61": -27,
+  "62": 18,
+  "63": 48,
+  "64": 59,
+  "65": 57,
+  "66": 53,
+  "67": 52,
+  "68": 51,
+  "69": 52,
+  "70": 52,
+  "71": 53,
+  "72": 55,
+  "73": 56,
+  "74": 57,
+  "75": 58,
+  "76": 59,
+  "77": 60,
+  "78": 59,
+  "79": 57,
+  "80": 53,
+  "81": 48,
+  "82": 42,
+  "83": 37,
+  "84": 31,
+  "85": 26,
+  "86": 22,
+  "87": 17,
+  "88": 13,
+  "89": 9,
+  "90": 5,
+  "91": 1,
+  "92": -2,
+  "93": -4,
+  "94": -6,
+  "95": -8,
+  "96": -10,
+  "97": -11,
+  "98": -13,
+  "99": -14,
+  "100": -14,
+  "101": -15,
+  "102": -15,
+  "103": -15,
+  "104": -15
+ },
+ "sword_px": {
+  "blade": 66,
+  "blade_width": 10,
+  "guard_width": 14,
+  "grip": 9.3
+ }
+}

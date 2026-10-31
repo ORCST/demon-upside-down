@@ -1,0 +1,112 @@
+{
+  "attack": [
+    {
+      "pose": "hc1_k1",
+      "hold": 1
+    },
+    {
+      "pose": "hc1_k2",
+      "hold": 1
+    },
+    {
+      "pose": "hc1_k4",
+      "hold": 2
+    },
+    {
+      "pose": "hc1_k5",
+      "hold": 1
+    },
+    {
+      "pose": "hc1_k6",
+      "hold": 3
+    }
+  ],
+  "recover": [
+    {
+      "pose": "hc1_c1",
+      "hold": 2
+    },
+    {
+      "pose": "hc1_c2",
+      "hold": 1
+    }
+  ],
+  "fps": 12,
+  "hit_after": "hc1_k5",
+  "cancel_from": {
+    "pose": "hc1_k6",
+    "hold_index": 1
+  },
+  "reference_hit_frame": 11,
+  "canvas": [
+    256,
+    256
+  ],
+  "ground_y": 208,
+  "status": "devin_timing_proposal_pending_in_game_tuning",
+  "pose_paths": {
+    "idle_tail": "niulai_idle_tail_native.png",
+    "hc1_k1": "niulai_hc1_k1_native.png",
+    "hc1_k2": "niulai_hc1_k2_native.png",
+    "hc1_k3": "niulai_hc1_k3_native.png",
+    "hc1_k4": "niulai_hc1_k4_native.png",
+    "hc1_k5": "niulai_hc1_k5_native.png",
+    "hc1_k6": "niulai_hc1_k6_native.png",
+    "hc1_c1": "niulai_hc1_c1_native.png",
+    "hc1_c2": "niulai_hc1_c2_native.png"
+  },
+  "root_motion_note": "Source is the in-place/non-RM version. Original root-motion distances cannot be recovered reliably. Character artwork is anchored in place. K4→K5 and K5→K6 displacement remain for Devin to tune; no invented pixel distance.",
+  "root_motion_px_estimate": null,
+  "version": "hc1_v02",
+  "art_changes": [
+    "hc1_k4 redraw"
+  ],
+  "offset_px": {
+    "idle_tail": [
+      0,
+      0
+    ],
+    "hc1_k1": [
+      0,
+      0
+    ],
+    "hc1_k2": [
+      0,
+      0
+    ],
+    "hc1_k3": [
+      0,
+      0
+    ],
+    "hc1_k4": [
+      0,
+      0
+    ],
+    "hc1_k5": [
+      15,
+      0
+    ],
+    "hc1_k6": [
+      0,
+      0
+    ],
+    "hc1_c1": [
+      0,
+      0
+    ],
+    "hc1_c2": [
+      0,
+      0
+    ]
+  },
+  "offset_note": "Offsets are native canvas translations for artwork registration, not gameplay root motion. K5 PNG is byte-identical to v01: apply [15,0] ONCE. No offset is baked into that PNG.",
+  "hit_unit_index": 5,
+  "cancel_until": {
+    "pose": "hc1_c1",
+    "hold_index": 1
+  },
+  "input_buffer_from": "hc1_k5",
+  "index_base": 0,
+  "return_to_idle": "idle_tail",
+  "timing_note": "Devin review proposal only; no opening/closing idle hold, K3 retained as spare but omitted from playback. K6 second held unit means hold_index=1."
+}

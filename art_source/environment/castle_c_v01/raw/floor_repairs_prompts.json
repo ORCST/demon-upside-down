@@ -1,0 +1,13 @@
+{
+  "reason": "Transparent-source center holes/speckles; generate fully opaque tile surface maps. Native output remains RGBA.",
+  "jobs": [
+    {
+      "id": "floor_body",
+      "prompt": "Use case: stylized-concept. Image1 is the selected style reference. Generate ONLY a seamless square FLOOR BODY texture tile, a FULLY OPAQUE surface map filling the ENTIRE image with solid masonry, no surrounding empty area. Cute chunky cartoon pixel art, warm-purple solid stone blocks, large FLAT color regions, dark plum outlines/mortar. Two rows of staggered rounded blocks, each about32x32 native, tile64x64; opposite LEFT/RIGHT and TOP/BOTTOM edges join. The FACE OF EACH STONE IS SOLID UNBROKEN FLAT lavender-purple. No holes, dents, pits, shadow circles, bubbles, haze, gradients, translucent centers, texture noise, glass or see-through areas. Each block face uses one medium purple with a simple narrow upper-left highlight and solid darker lower edge. NO warm bright top cap; it is a separate asset. NO outside background, margin, frame border, floor, scene, object, character, text or prop. FRONT orthographic texture, not a perspective brick pile. Entire canvas is opaque colored stone/mortar. Keep stone faces smooth broad flat colors as in the reference."
+    },
+    {
+      "id": "floor_top",
+      "prompt": "Use case: stylized-concept. Image1 is the selected cartoon style. Generate ONLY a seamless FLOOR TOP CAP texture, a completely OPAQUE thin wide rectangular surface map filling the WHOLE canvas, width:height4:1. Exactly two large rounded purple-gray stone bricks in one straight horizontal row; native tile64x16. Their top rim is flat dusty peach/orange, their fronts a SOLID uniform lavender-gray with one dark-purple lower edge, thick dark plum outlines. ONLY3–4 large solid flat colors in each brick. No mottling, speckles, gradients, chipped texture, pits, holes or translucent areas. Top rim perfectly horizontal and vivid for gameplay. Left and right edges are cut THROUGH repeating bricks/mortar at the same cross-section, NOT isolated rounded end caps. No empty outside background or margins, ground shadow, scene, floor-body rows, text or props. No perspective top plane. This is an opaque tile SURFACE TEXTURE; fill the complete image and preserve the clean warm-purple cartoon colors."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "status": "generated_reviewed_rejected_for_game_import",
+  "mode": "fl2va_plus_native_fun_controlnet_and_pixel_frame_guides",
+  "variant": "original",
+  "attempt": 2,
+  "seed": 20261015,
+  "steps": 8,
+  "fps": 24,
+  "frames": 39,
+  "size": [
+    768,
+    768
+  ],
+  "strength": 1.0,
+  "anchors": {
+    "8": "hc1_k4",
+    "12": "hc1_k6"
+  },
+  "K2_included": false,
+  "control_video_fed_to_model": true,
+  "control_frames_padded": false,
+  "source_sha256": {
+    "art_source/control/heavy_combo_v02_39f/original/depth.mp4": "e7e02436185cfd20bb3829cfea633944a9086538f4fd123bb4a6ff94ac4f27d5",
+    "art_source/control/heavy_combo_v02_39f/render_manifest.json": "dc4fefcb85d3b0d1f019d93b0e6488175ec2f00c403b55349b7ccf006acafdf2",
+    "art_source/control/heavy_combo_v02_39f/inputs/R000_idle_tail_green.png": "84e7834431633baaddb080ad25ddd89b94299abab79592b1316c04e70914c5f4",
+    "art_source/control/heavy_combo_v02_39f/inputs/R008_hc1_k4_green.png": "1c8757abc0461fa08f0a45e9202912f3accbf85b8c7b9731fc8eb2f9d3260958",
+    "art_source/control/heavy_combo_v02_39f/inputs/R012_hc1_k6_green.png": "83e08e98de30a5fdf6377b72034cb5b4604841f338e734747cced35ec124780f",
+    "tools/run_h3_control_heavy.py": "4f86abf40826f6e87421091ba3afa23b3e28aa7c30c85fcc8bac8939534ff111"
+  },
+  "submitted_at_utc": "2026-10-16T03:34:10Z",
+  "system_stats": {
+    "system": {
+      "os": "win32",
+      "ram_total": 33454948352,
+      "ram_free": 20811177984,
+      "comfyui_version": "0.35.0",
+      "required_frontend_version": "1.51.10",
+      "installed_templates_version": "0.11.57",
+      "required_templates_version": "0.11.57",
+      "comfy_package_versions": [
+        {
+          "name": "comfyui-frontend-package",
+          "installed": "1.51.10",
+          "required": "1.51.10"
+        },
+        {
+          "name": "comfyui-workflow-templates",
+          "installed": "0.11.57",
+          "required": "0.11.57"
+        },
+        {
+          "name": "comfyui-embedded-docs",
+          "installed": "0.5.11",
+          "required": "0.5.11"
+        },
+        {
+          "name": "comfy-kitchen",
+          "installed": "0.2.33",
+          "required": "0.2.33"
+        },
+        {
+          "name": "comfy-aimdo",
+          "installed": "0.5.3",
+          "required": "0.5.3"
+        }
+      ],
+      "python_version": "3.13.12 (main, Feb 12 2026, 00:38:53) [MSC v.1944 64 bit (AMD64)]",
+      "pytorch_version": "2.12.1+cu130",
+      "embedded_python": false,
+      "deploy_environment": "local-desktop2-standalone",
+      "argv": [
+        "main.py",
+        "--listen",
+        "127.0.0.1",
+        "--port",
+        "8189",
+        "--models-directory",
+        "D:/Comfy-Desktop/ComfyUI-Shared/models",
+        "--input-directory",
+        "D:/GoDOTProject/demon_unside_down/outputs/h3_control_setup_20261015/comfy_input",
+        "--output-directory",
+        "D:/GoDOTProject/demon_unside_down/outputs/h3_control_setup_20261015/comfy_output",
+        "--user-directory",
+        "D:/GoDOTProject/demon_unside_down/outputs/h3_control_setup_20261015/comfy_user",
+        "--disable-auto-launch",
+        "--disable-all-custom-nodes",
+        "--disable-api-nodes",
+        "--use-pytorch-cross-attention",
+        "--preview-method",
+        "none",
+        "--disable-comfy-compiler"
+      ]
+    },
+    "devices": [
+      {
+        "name": "cuda:0 NVIDIA GeForce RTX 5070 : cudaMallocAsync",
+        "type": "cuda",
+        "index": 0,
+        "vram_total": 12820480000,
+        "vram_free": 11569987584,
+        "torch_vram_total": 0,
+        "torch_vram_free": 0
+      }
+    ]
+  },
+  "prompt_id": "c297fe78-95ed-4e62-8c6a-8b62254e7dd5",
+  "saved_frames": 39,
+  "collected_at_utc": "2026-10-16T03:35:46Z",
+  "manual_review_path": "review.json"
+}

@@ -1,6 +1,6 @@
 class_name Player
 extends CharacterBody2D
-## 主角控制器：移动 / 跳跃 / 冲刺 / 拳脚连段 / 受击。
+## 主角控制器：移动 / 跳跃 / 冲刺 / 大剑连段 / 受击。
 ## 输入用缓冲：顿帧冻结期间按下的键也会记住，解冻后立刻接招。
 
 signal health_changed(current: int, max_health: int)
@@ -58,8 +58,9 @@ var _was_on_floor := true
 var _fall_speed := 0.0
 var _spawn_pos := Vector2.ZERO
 var _frame := 0
+var _land_t := 0.0
 
-@onready var rig: Puppet = $Rig
+@onready var rig: NiulaiSprite = $Rig
 @onready var hitbox: Hitbox = $Hitbox
 @onready var hurtbox: Hurtbox = $Hurtbox
 
@@ -149,10 +150,13 @@ func _state_attack(delta: float) -> void:
 	if f == a.startup + 1:
 		hitbox.activate(a, facing)
 		Sfx.play(a.sfx_whoosh, -4.0)
+		_spawn_trail(a)
 		if not a.air and not _enemy_in_front(22.0):
 			velocity.x = facing * a.lunge
 		elif a.id == &"air_spike":
 			velocity.y = maxf(velocity.y, 120.0)
+		if a.heavy and not a.air:
+			Juice.dust(global_position + Vector2(facing * 40.0, 0.0), 8, facing)
 	elif f == active_end + 1:
 		hitbox.deactivate()
 
@@ -206,7 +210,7 @@ func _try_attack() -> bool:
 		elif Input.is_action_pressed(&"move_up"):
 			_start_attack(&"uppercut")
 		else:
-			_start_attack(&"jab1")
+			_start_attack(&"hc1")
 		return true
 	return false
 
@@ -225,7 +229,7 @@ func _queue_followup(a: AttackData) -> void:
 	elif _buf[&"heavy"] > 0.0:
 		if a.air and a.id != &"air_spike":
 			_queued = &"air_spike"
-		elif a.id == &"jab1" or a.id == &"jab2":
+		elif a.id == &"hc1" or a.id == &"hc2":
 			_queued = &"power"
 		else:
 			return
@@ -292,6 +296,7 @@ func _do_jump(air: bool) -> void:
 	_jump_held = true
 	velocity.y = -jump_velocity * (0.9 if air else 1.0)
 	rig.squash = Vector2(0.7, 1.3)
+	rig.play_anim(&"jump", 1.0, true)
 	Sfx.play("jump", -8.0)
 	Juice.dust(global_position, 6 if air else 4)
 
@@ -363,11 +368,13 @@ func _on_hurt(hit: HitData) -> void:
 		get_tree().create_timer(1.4).timeout.connect(_respawn)
 	else:
 		state = State.HURT
+		rig.play_anim(&"hurt", 1.0, true)
 		_hurt_t = hit.stagger
 
 
 func _respawn() -> void:
 	global_position = _spawn_pos
+	reset_physics_interpolation()  # 瞬移，不要从死亡位置插值滑过来
 	velocity = Vector2.ZERO
 	health = max_health
 	health_changed.emit(health, max_health)
@@ -387,6 +394,7 @@ func _tick_timers(delta: float) -> void:
 	_coyote -= delta
 	_dash_cd -= delta
 	_invuln_t -= delta
+	_land_t -= delta
 	hurtbox.invincible = _invuln_t > 0.0 or state == State.DASH or state == State.DEAD
 
 
@@ -394,78 +402,50 @@ func _after_move() -> void:
 	var on_floor := is_on_floor()
 	if on_floor and not _was_on_floor and _fall_speed > 150.0:
 		rig.squash = Vector2(1.25, 0.75)
+		_land_t = 0.12  # 落地蹲 3 帧 @24fps
 		Juice.dust(global_position, 5)
 		Sfx.play("land", -10.0)
 	_was_on_floor = on_floor
 
 
-func _update_rig(delta: float) -> void:
+func _update_rig(_delta: float) -> void:
 	rig.facing = facing
-	rig.airborne = not is_on_floor()
-	rig.fist = Vector2.ZERO
-	rig.foot = Vector2.ZERO
-	rig.fist_big = false
-	rig.lean = 0.0
-	rig.crouch = 0.0
 	rig.tint_amount = 0.0
-	var speed_ratio := clampf(absf(velocity.x) / run_speed, 0.0, 1.0)
 	match state:
 		State.NORMAL:
-			if is_on_floor():
-				rig.run_amount = lerpf(rig.run_amount, speed_ratio, 0.3)
-				rig.run_phase += delta * 15.0 * speed_ratio
-				rig.lean = 0.2 * speed_ratio
+			if not is_on_floor():
+				rig.play_anim(&"jump" if velocity.y < 0.0 else &"fall")
+			elif absf(velocity.x) > 20.0:
+				rig.play_anim(&"run", clampf(absf(velocity.x) / run_speed, 0.6, 1.2))
+			elif _land_t > 0.0:
+				rig.play_anim(&"land")
 			else:
-				rig.run_amount = 0.0
-				rig.lean = clampf(-velocity.y / 1500.0, -0.15, 0.2)
+				rig.play_anim(&"idle")
 		State.ATTACK:
-			rig.run_amount = 0.0
-			_pose_attack()
+			var a := _attack
+			if a:
+				rig.show_attack(a.anim, _attack_frame, a.anim_timing, a.startup)
+				if a.heavy and _attack_frame <= a.startup:  # 重击蓄力时发光，提示"要来了"
+					rig.tint_amount = 0.5 * float(_attack_frame) / a.startup
 		State.DASH:
-			rig.run_amount = 0.0
-			rig.airborne = false
-			rig.lean = 0.55
-			rig.crouch = 0.5
+			rig.play_anim(&"dash")
 		State.HURT:
-			rig.lean = -0.45
+			rig.play_anim(&"hurt")
 		State.DEAD:
-			rig.lean = -1.3
-			rig.crouch = 1.0
+			rig.play_anim(&"death")
 	# 无敌闪烁
 	var blink := _invuln_t > 0.0 and state != State.DASH and fmod(Time.get_ticks_msec() / 70.0, 2.0) < 1.0
 	rig.modulate.a = 0.35 if blink else 1.0
 
 
-func _pose_attack() -> void:
-	var a := _attack
-	if a == null:
+func _spawn_trail(a: AttackData) -> void:
+	if a.trail.z <= 0.0:
 		return
-	var f := _attack_frame
-	var is_kick := a.limb == AttackData.Limb.FOOT
-	var strike := a.hitbox_offset + Vector2(a.hitbox_size.x * 0.25, 0)
-	var wind := Vector2(4, -10) if is_kick else Vector2(-5, a.hitbox_offset.y + 6)
-	var guard := Vector2(6, -14) if is_kick else Vector2(9, -32)
-	var pos: Vector2
-	if f <= a.startup:
-		var k := float(f) / a.startup
-		pos = guard.lerp(wind, k)
-		rig.lean = -0.2 * k
-		if a.id == &"uppercut":
-			rig.crouch = k
-		elif a.id == &"power":
-			rig.tint = Color(1, 0.85, 0.3)
-			rig.tint_amount = 0.6 * k
-	elif f <= a.startup + a.active:
-		pos = strike
-		rig.lean = -0.3 if is_kick else 0.4
-		if a.id == &"uppercut":
-			rig.lean = -0.1
-	else:
-		var k := float(f - a.startup - a.active) / a.recovery
-		pos = strike.lerp(guard, minf(k * 1.5, 1.0))
-		rig.lean = (-0.3 if is_kick else 0.4) * (1.0 - k)
-	if is_kick:
-		rig.foot = pos
-	else:
-		rig.fist = pos
-		rig.fist_big = a.heavy
+	var t := SlashTrail.new()
+	t.facing = facing
+	t.from_deg = a.trail.x
+	t.to_deg = a.trail.y
+	t.radius = a.trail.z
+	t.heavy = a.heavy
+	t.width = 18.0 if a.heavy else 13.0
+	Juice.spawn(t, global_position + Vector2(a.trail_center.x * facing, a.trail_center.y))

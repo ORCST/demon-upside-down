@@ -1,0 +1,22 @@
+Tool: built-in image_gen
+Reference: D:\GoDOTProject\output\imagegen\demon_unside_down\niulai_idle_tail.png
+
+GLOBAL RULES (apply to every Niu Lai sprite):
+- The attached reference image is the FINAL approved sprite of "Niu Lai" (yellow calf greatsword warrior) in his idle stance, on the standard canvas. Keep his identity exactly: hornless lumpy head, golden yellow skin, pale cream muzzle and chin, small pointed ear with pink inside, ONE thick dark furrowed eyebrow, sleepy deadpan eye, soft chubby childlike body with round belly and short limbs, bare yellow stubby hands, dark brown hooves, dark brown cloth shorts, brown leather belt, and a short thin yellow cow tail with a dark brown tuft at the tip, coming out from the back of the shorts. The tail is always present; it may swing naturally with the pose.
+- The greatsword is the same as in the reference: wide plain steel-gray blade with ONE lighter edge line, dark crossguard, brown grip. Same size; never shorten, lengthen or redesign it.
+- True pixel art on a NATIVE 256x256 canvas, exported EXACTLY 4x nearest-neighbor to 1024x1024. One consistent square pixel grid, no anti-aliasing, no blur, no gradients, no half pixels, no partial transparency.
+- Use ONLY this 17-color palette, no new colors:
+  #281B21 #3F2B25 #4D515D #5B402D #777C86 #7E5B3B #A78150 #B68A24 #B6A385 #BCC3CA #DCCCAB #DD9586 #E8B830 #F2BAA3 #F4D36A #F6EACB #F8F4EA
+- One-native-pixel dark outline (#281B21) around the whole character and the sword. Light from the top-left, 2-3 flat tones per material.
+- STRICT right-facing true profile: body and head point RIGHT, only one eye visible, muzzle points right. (Unless the pose says otherwise.)
+- Same scale as the reference: the character is about 64 native pixels tall when standing upright.
+- GROUND POSES: the soles of the hooves stand on native row y=207 (ground line y=208), exactly like the reference. The character's body stays centered around native x=112.
+- AIR POSES: keep the body centered around native x=112, with the lowest hoof around native y=170.
+- Everything (character and the whole sword) stays inside the canvas with at least 8 native pixels of margin.
+- NO motion blur, NO slash trails, NO speed lines, NO impact effects, NO ground, NO shadow, NO text. Fully transparent background.
+
+POSE: knocked out, lying flat on his back on the ground line, head on the right side, eye closed (a little swirl-dizzy look is fine), arms spread. The greatsword lies on the ground beside him. Everything stays on or above the ground line y=208.
+OUTPUT: one small sprite on the standard 1024x1024 transparent canvas. Preserve the approved reference's native scale (standing calf 64 art pixels tall), native body center x=112, ground hoof sole y=207 or airborne lowest hoof about y=170. DO NOT enlarge, zoom or center the sword-and-body group to fill the canvas. The NEW short yellow tail with a small brown tuft from the attached reference must be visible, attached just below the belt at the back of the shorts, and naturally follow the pose. It is a cow tail, not a weapon. Whole sword fits inside canvas with >=8 native pixels margin. Keep the blade face one single plain steel-gray tone and just one light edge line.
+
+
+Pixel export: native 256x256; exact 4x nearest-neighbor to 1024x1024; pixels snapped only to the specified 17-color palette; binary alpha; one-pixel silhouette outline; body/hoof anchors normalized to the standard canvas; blade steel tones normalized. See export-validation.txt and pixel-verification.txt for checks.

@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
-[ext_resource type="Script" path="res://scripts/visual/puppet.gd" id="2_puppet"]
+[ext_resource type="Script" path="res://scripts/visual/niulai_sprite.gd" id="2_puppet"]
 [ext_resource type="Script" path="res://scripts/combat/hitbox.gd" id="3_hitbox"]
 [ext_resource type="Script" path="res://scripts/combat/hurtbox.gd" id="4_hurtbox"]
 

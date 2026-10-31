@@ -1,0 +1,686 @@
+{
+  "date": "2026-10-29",
+  "source_concept": "art_source\\environment\\forest_scene_concept_v01\\forest_moonlight_ruins_v01.png",
+  "source_concept_approved_by_user": true,
+  "authorization": "User said: 可以的拆分一下",
+  "tool": "built-in image_gen",
+  "generation_calls": 15,
+  "method": "Isolated/reconstructed occluded components using the approved concept, then area resize/palette/binary-alpha/join processing; not pixel-identical clipping.",
+  "palette_colors": 32,
+  "assets": [
+    {
+      "file": "sky_far.png",
+      "size": [
+        640,
+        360
+      ],
+      "colors": 8,
+      "transparent_pixels": 0,
+      "bbox": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {
+        "x_boundary_equal": true
+      },
+      "modular": null,
+      "sha256": "9e814eb4605ae7520362fc3577bc6886f93ba7b936435cc6a7192be690827eaa"
+    },
+    {
+      "file": "mid_forest.png",
+      "size": [
+        640,
+        360
+      ],
+      "colors": 21,
+      "transparent_pixels": 94118,
+      "bbox": [
+        0,
+        0,
+        640,
+        340
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {
+        "x_boundary_equal": true
+      },
+      "modular": null,
+      "sha256": "c44729c7067e4cd6c676ffea6ff3e772186bd4070c7eff6867a8237c8e73a4fb"
+    },
+    {
+      "file": "tree_left.png",
+      "size": [
+        224,
+        360
+      ],
+      "colors": 19,
+      "transparent_pixels": 36911,
+      "bbox": [
+        1,
+        1,
+        222,
+        359
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "cfdbf2e7a8fa554a0bb126e5807fd6eeec1c790f03625d6c401f4ae6152350d9"
+    },
+    {
+      "file": "tree_hollow.png",
+      "size": [
+        256,
+        360
+      ],
+      "colors": 24,
+      "transparent_pixels": 34550,
+      "bbox": [
+        1,
+        1,
+        254,
+        359
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "eb264c618abd9e2611099f916e2467d376f8e1ea4fa19be4612c40e512bbd66c"
+    },
+    {
+      "file": "terrain_top.png",
+      "size": [
+        64,
+        16
+      ],
+      "colors": 19,
+      "transparent_pixels": 148,
+      "bbox": [
+        0,
+        0,
+        64,
+        16
+      ],
+      "continuous_grass_rim_y": 3,
+      "tiling": {
+        "x_boundary_equal": true
+      },
+      "modular": null,
+      "sha256": "1e50b9831a3e192e04843662f8fdaafdb7770920402fc9251ceda6dfd7ae0e07"
+    },
+    {
+      "file": "terrain_body.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 12,
+      "transparent_pixels": 0,
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {
+        "x_boundary_equal": true,
+        "y_boundary_equal": true
+      },
+      "modular": null,
+      "sha256": "7d84371da0d632d0900fffa980df77f98058eb84411e9f448414eed01930597b"
+    },
+    {
+      "file": "terrain_edge_left.png",
+      "size": [
+        16,
+        80
+      ],
+      "colors": 23,
+      "transparent_pixels": 31,
+      "bbox": [
+        0,
+        0,
+        16,
+        80
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "7568e90c74e6200fca612b8554e4bf8e17d0e2d752db3cdd30e046861c357d25"
+    },
+    {
+      "file": "terrain_edge_right.png",
+      "size": [
+        16,
+        80
+      ],
+      "colors": 21,
+      "transparent_pixels": 33,
+      "bbox": [
+        0,
+        0,
+        16,
+        80
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "b1e173e9e5ccd6f9f77d8f2804ee8c881b8cd96d224e716d2b0cb5ae2c76cb54"
+    },
+    {
+      "file": "stone_ledge.png",
+      "size": [
+        96,
+        48
+      ],
+      "colors": 22,
+      "transparent_pixels": 2156,
+      "bbox": [
+        1,
+        14,
+        95,
+        47
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": {
+        "left": [
+          0,
+          0,
+          16,
+          48
+        ],
+        "middle": [
+          16,
+          0,
+          64,
+          48
+        ],
+        "right": [
+          80,
+          0,
+          16,
+          48
+        ],
+        "middle_edges_equal": true,
+        "first_continuous_surface_y": 18,
+        "surface_y_is_visual_hint_not_collision_data": true
+      },
+      "sha256": "038541344878833180316e4e339e370b9fbb71abf18c326cde094fb6cef048bb"
+    },
+    {
+      "file": "ruin_pillar.png",
+      "size": [
+        48,
+        144
+      ],
+      "colors": 21,
+      "transparent_pixels": 2311,
+      "bbox": [
+        1,
+        16,
+        47,
+        143
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "9b0784ed067c9864310f40c44660915594d82ad9b08fa73dc1d2c14b32034a16"
+    },
+    {
+      "file": "branch_platform.png",
+      "size": [
+        96,
+        32
+      ],
+      "colors": 22,
+      "transparent_pixels": 2083,
+      "bbox": [
+        1,
+        14,
+        95,
+        31
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": {
+        "left": [
+          0,
+          0,
+          16,
+          32
+        ],
+        "middle": [
+          16,
+          0,
+          64,
+          32
+        ],
+        "right": [
+          80,
+          0,
+          16,
+          32
+        ],
+        "middle_edges_equal": true,
+        "first_continuous_surface_y": 17,
+        "surface_y_is_visual_hint_not_collision_data": true
+      },
+      "sha256": "775b01e2bd1d08941da76ea2d4270d7803baf8263c5a29915f0872f2379aa2bb"
+    },
+    {
+      "file": "bridge.png",
+      "size": [
+        192,
+        64
+      ],
+      "colors": 14,
+      "transparent_pixels": 8453,
+      "bbox": [
+        1,
+        20,
+        191,
+        63
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": {
+        "left": [
+          0,
+          0,
+          48,
+          64
+        ],
+        "middle": [
+          48,
+          0,
+          96,
+          64
+        ],
+        "right": [
+          144,
+          0,
+          48,
+          64
+        ],
+        "middle_edges_equal": true,
+        "first_continuous_surface_y": 28,
+        "surface_y_is_visual_hint_not_collision_data": true
+      },
+      "sha256": "fac6e1213fe683a56c5031b8a628e035b2da93d3e9e5efb92386b7f2fe9e1aa5"
+    },
+    {
+      "file": "water.png",
+      "size": [
+        128,
+        64
+      ],
+      "colors": 2,
+      "transparent_pixels": 0,
+      "bbox": [
+        0,
+        0,
+        128,
+        64
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {
+        "x_boundary_equal": true
+      },
+      "modular": null,
+      "sha256": "836e5e10163b387aa5608adeee43e9f8cada62f0f57e1dcb5fa3de609f8fb616"
+    },
+    {
+      "file": "mushrooms.png",
+      "size": [
+        64,
+        48
+      ],
+      "colors": 16,
+      "transparent_pixels": 1187,
+      "bbox": [
+        3,
+        0,
+        61,
+        48
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "0d4d2d5a68373cb58ebf450903b4fd9614fa14185217f52d674caca1e034b01d"
+    },
+    {
+      "file": "hoof_sign.png",
+      "size": [
+        48,
+        56
+      ],
+      "colors": 10,
+      "transparent_pixels": 994,
+      "bbox": [
+        0,
+        1,
+        48,
+        56
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "41c7877528923941dc1c962318ba00736afbad49888c88b3e46df25c0d6840b4"
+    },
+    {
+      "file": "cowbell.png",
+      "size": [
+        32,
+        40
+      ],
+      "colors": 11,
+      "transparent_pixels": 547,
+      "bbox": [
+        2,
+        0,
+        30,
+        40
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "dcadfb83bc3eba46e41b61b09111eb3af6f4cd280dfd27e951e4524421b547fa"
+    },
+    {
+      "file": "fern.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 18,
+      "transparent_pixels": 4217,
+      "bbox": [
+        0,
+        10,
+        96,
+        96
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "4b628358997057f1711200c082a29c633ef94ca4ff40ea4d3aa1dd1575b6a45f"
+    },
+    {
+      "file": "rocks.png",
+      "size": [
+        96,
+        64
+      ],
+      "colors": 21,
+      "transparent_pixels": 3126,
+      "bbox": [
+        0,
+        18,
+        96,
+        64
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "30850ab347d78dd92866a54bb36c0a0af9abc6d8181812f9e284835a5f4d6426"
+    },
+    {
+      "file": "fg_fern.png",
+      "size": [
+        160,
+        160
+      ],
+      "colors": 3,
+      "transparent_pixels": 11719,
+      "bbox": [
+        0,
+        17,
+        160,
+        160
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "72fbd682309e6ff8daa629eb16addc35a3d93c31ff9f66bddeb0586d5cfe6f44"
+    },
+    {
+      "file": "fg_tree.png",
+      "size": [
+        96,
+        360
+      ],
+      "colors": 3,
+      "transparent_pixels": 6740,
+      "bbox": [
+        0,
+        1,
+        96,
+        359
+      ],
+      "continuous_grass_rim_y": null,
+      "tiling": {},
+      "modular": null,
+      "sha256": "eb1d0f54dc84cb0f9cc0410ab9236fd0b3646bff555b32d05511c4a992723ea8"
+    }
+  ],
+  "selected_sources": {
+    "sky_far": {
+      "file": "art_source\\environment\\forest_v01\\raw\\sky_far_attempt01.png",
+      "original_size": [
+        1672,
+        941
+      ],
+      "crop_bbox": [
+        0,
+        0,
+        1672,
+        941
+      ]
+    },
+    "mid_forest": {
+      "file": "art_source\\environment\\forest_v01\\raw\\mid_forest_attempt01.png",
+      "original_size": [
+        1672,
+        941
+      ],
+      "crop_bbox": [
+        0,
+        0,
+        1672,
+        941
+      ]
+    },
+    "tree_left": {
+      "file": "art_source\\environment\\forest_v01\\raw\\tree_left_attempt01.png",
+      "original_size": [
+        990,
+        1588
+      ],
+      "crop_bbox": [
+        15,
+        13,
+        976,
+        1572
+      ]
+    },
+    "tree_hollow": {
+      "file": "art_source\\environment\\forest_v01\\raw\\tree_hollow_attempt01.png",
+      "original_size": [
+        1058,
+        1487
+      ],
+      "crop_bbox": [
+        14,
+        7,
+        1052,
+        1476
+      ]
+    },
+    "terrain": {
+      "file": "art_source\\environment\\forest_v01\\raw\\terrain_attempt01.png",
+      "original_size": [
+        1122,
+        1402
+      ],
+      "crop_bbox": [
+        0,
+        337,
+        1122,
+        1292
+      ],
+      "grass_soil_split_y": 268
+    },
+    "stone_ledge": {
+      "file": "art_source\\environment\\forest_v01\\raw\\stone_ledge_attempt01.png",
+      "original_size": [
+        1774,
+        887
+      ],
+      "crop_bbox": [
+        300,
+        272,
+        1474,
+        678
+      ]
+    },
+    "ruin_pillar": {
+      "file": "art_source\\environment\\forest_v01\\raw\\ruin_pillar_attempt01.png",
+      "original_size": [
+        724,
+        2172
+      ],
+      "crop_bbox": [
+        50,
+        298,
+        684,
+        2055
+      ]
+    },
+    "branch_platform": {
+      "file": "art_source\\environment\\forest_v01\\raw\\branch_platform_attempt01.png",
+      "original_size": [
+        2172,
+        724
+      ],
+      "crop_bbox": [
+        128,
+        193,
+        2047,
+        549
+      ]
+    },
+    "bridge": {
+      "file": "art_source\\environment\\forest_v01\\raw\\bridge_attempt01.png",
+      "original_size": [
+        2172,
+        724
+      ],
+      "crop_bbox": [
+        24,
+        142,
+        2148,
+        623
+      ]
+    },
+    "water": {
+      "file": "art_source\\environment\\forest_v01\\raw\\water_attempt01.png",
+      "original_size": [
+        1774,
+        887
+      ],
+      "crop_bbox": [
+        0,
+        0,
+        1774,
+        887
+      ]
+    },
+    "mushrooms": {
+      "file": "art_source\\environment\\forest_v01\\raw\\mushrooms_attempt01.png",
+      "original_size": [
+        1448,
+        1086
+      ],
+      "crop_bbox": [
+        275,
+        183,
+        1174,
+        927
+      ]
+    },
+    "hoof_sign": {
+      "file": "art_source\\environment\\forest_v01\\raw\\hoof_sign_attempt01.png",
+      "original_size": [
+        1161,
+        1355
+      ],
+      "crop_bbox": [
+        125,
+        155,
+        1037,
+        1206
+      ]
+    },
+    "cowbell": {
+      "file": "art_source\\environment\\forest_v01\\raw\\cowbell_attempt01.png",
+      "original_size": [
+        1122,
+        1402
+      ],
+      "crop_bbox": [
+        242,
+        222,
+        880,
+        1144
+      ]
+    },
+    "fern": {
+      "file": "art_source\\environment\\forest_v01\\raw\\fern_attempt01.png",
+      "original_size": [
+        1254,
+        1254
+      ],
+      "crop_bbox": [
+        95,
+        172,
+        1202,
+        1160
+      ]
+    },
+    "rocks": {
+      "file": "art_source\\environment\\forest_v01\\raw\\rocks_attempt01.png",
+      "original_size": [
+        1536,
+        1024
+      ],
+      "crop_bbox": [
+        215,
+        296,
+        1340,
+        818
+      ]
+    }
+  },
+  "layer_order": [
+    "sky_far",
+    "mid_forest",
+    "tree_left/tree_hollow/ruin_pillar",
+    "terrain/platform/bridge/water",
+    "props",
+    "fg_fern/fg_tree"
+  ],
+  "sky_note": "Moon, ruined tower and far conifers are combined in sky_far, not separate sprites.",
+  "water_note": "Single static repeating texture, no water animation or physics implemented.",
+  "protected_files_unchanged": 2110,
+  "allowed_source_metadata_updates": [
+    "art_source\\environment\\forest_scene_concept_v01\\generation.json",
+    "art_source\\environment\\forest_scene_concept_v01\\prompt.txt",
+    "art_source\\environment\\forest_scene_concept_v01\\README.md"
+  ],
+  "level_assembly_or_game_integration": false,
+  "builder_sha256": "608c81050da9f88269f2c3d0c2ca11d481cbec2682b0b6735b70410fe5ba5020",
+  "review_status": "material_pack_for_Devin_integration_review"
+}

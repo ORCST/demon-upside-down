@@ -1,0 +1,10 @@
+Tool: built-in image_gen
+Reference: D:\GoDOTProject\output\imagegen\demon_unside_down\niulai_idle_tail.png
+
+The attached image is a finished pixel-art sprite of "Niu Lai", a yellow calf greatsword warrior, on a 1024x1024 canvas. Redraw the EXACT same character, outfit, sword, pose and composition as a smooth, high-resolution 2D cartoon illustration with clean cel shading and crisp lines. NOT pixel art.
+
+Keep identical: strict right-facing true profile (one eye visible, muzzle pointing right, no horns); golden yellow skin (#E8B830 with lighter and darker tones); pale cream muzzle and chin; pink inner ear; one thick dark furrowed eyebrow; sleepy deadpan eye; soft chubby childlike body with round belly and short limbs; bare yellow stubby hands; brown hooves; dark brown cloth shorts; brown leather belt; a short thin yellow cow tail with a dark brown tuft; the plain steel-gray greatsword with one lighter edge line, dark crossguard and brown grip, held with both hands, blade pointing forward and up at 45 degrees.
+
+Same position and scale on the canvas: laid over the attached image, the silhouettes should match.
+Flat cel shading, light from the top-left, clean dark outline, solid colors, no texture noise, no gradient on the sword.
+Fully transparent background, no ground, no shadow, no text. Size 1024x1024.

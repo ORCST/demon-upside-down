@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-18",
+  "generator": "built-in image_gen",
+  "calls": {
+    "front": 2,
+    "side": 2,
+    "total": 4
+  },
+  "technical_checks": [
+    {
+      "file": "niulai_front_apose_v01.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "9a0f58c7ddcbaa02c055fc5c80830a155552a1ec0430040201cec0c7ce20bd12",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "visible_bbox_rgb_threshold235": [
+        209,
+        84,
+        1044,
+        1159
+      ],
+      "visible_height_ratio": 0.8573,
+      "corner_rgb_minmax": [
+        253,
+        255
+      ]
+    },
+    {
+      "file": "niulai_side_apose_v01.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "298325c10f4b1890b4291708ea000aaff8d8e831c0b201cd1320debdeab5e19a",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "visible_bbox_rgb_threshold235": [
+        306,
+        87,
+        888,
+        1161
+      ],
+      "visible_height_ratio": 0.8565,
+      "corner_rgb_minmax": [
+        253,
+        255
+      ]
+    }
+  ],
+  "visual_review": {
+    "status": "modeling_reference_candidate_delivered_for_user_review",
+    "front": "true front, A pose, empty hands, hornless, continuous brow, round belly, brown shorts and hooves, short tufted tail",
+    "side": "right-facing profile, left/right limbs overlap as expected from lateral A pose; head/waist proportions revised against front",
+    "limitations": [
+      "Independently generated 2D views are approximate, not exact projections of one mesh; use front as primary scale reference.",
+      "Background is visually white, but sampled corners span RGB253-255 rather than exact pure white.",
+      "Slight smooth color variation remains despite flat-color prompts; this is a modeling input, not a baked game lighting texture.",
+      "No returned GLB/FBX, rigging, retargeting or actual 3D render has been verified."
+    ]
+  },
+  "documentation_checks": {
+    "local_links_checked": 44,
+    "missing_links": [],
+    "completion_note_index_handoff_board_synced": true,
+    "received_devin_messages_marked_processed": 2,
+    "user_model_not_yet_present": true
+  }
+}

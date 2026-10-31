@@ -1,0 +1,151 @@
+{
+  "checked_at_utc": "2026-10-16T03:10:55.100529+00:00",
+  "checks": {
+    "control_pngs": 468,
+    "all_dimensions_correct": true,
+    "finite_geometry_inside_canvas": true,
+    "both_variants_grounded": true,
+    "depth_matches_global_z_buffer": true,
+    "binary_masks_and_lineart": true,
+    "sword_has_visible_pixels_every_frame": true,
+    "all_7_videos_decode_expected_frames_at_24fps": true,
+    "green_inputs_exact_nearest_neighbor": true
+  },
+  "videos": [
+    {
+      "path": "original/beauty.mp4",
+      "decoded_frames": 39,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.625,
+      "sha256": "adcb7233061b652719ee107de19dda361ef7334c77247858e4732eccb08df14c"
+    },
+    {
+      "path": "original/depth.mp4",
+      "decoded_frames": 39,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.625,
+      "sha256": "e7e02436185cfd20bb3829cfea633944a9086538f4fd123bb4a6ff94ac4f27d5"
+    },
+    {
+      "path": "original/lineart.mp4",
+      "decoded_frames": 39,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.625,
+      "sha256": "f8dbc5198ef30dad49bd554ecd2ffb43b19ef82f86146fbbe5cee2113de3a9ad"
+    },
+    {
+      "path": "proxy/beauty.mp4",
+      "decoded_frames": 39,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.625,
+      "sha256": "2aba13c1386339384da750b648e9812ddaa6decbd521e60a4ec64cce61dc0650"
+    },
+    {
+      "path": "proxy/depth.mp4",
+      "decoded_frames": 39,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.625,
+      "sha256": "35eb145dea061108c114d24a33a58257f8e80f5d3b7b9072ed505f2e7a559f18"
+    },
+    {
+      "path": "proxy/lineart.mp4",
+      "decoded_frames": 39,
+      "fps": 24.0,
+      "size": [
+        768,
+        768
+      ],
+      "duration_seconds": 1.625,
+      "sha256": "d903b02f35995a713725504a7f31749e7a3b58895ba608cc12eb6357f21e225b"
+    },
+    {
+      "path": "control_compare.mp4",
+      "decoded_frames": 39,
+      "fps": 24.0,
+      "size": [
+        1152,
+        640
+      ],
+      "duration_seconds": 1.625,
+      "sha256": "f92fcfa891e9622604b54a34daea5427f359ad109fbbe753d9e4616071075dbc"
+    }
+  ],
+  "variants": {
+    "original": {
+      "frames": 39,
+      "pngs": 234,
+      "frame0_body_height_px": 192,
+      "feet_last_row_range": [
+        623,
+        623
+      ],
+      "minimum_geometry_margin_px": 96.566,
+      "ground_translation_range_px": [
+        -13.004777743645588,
+        2.2598836539780645
+      ],
+      "sword_visible_pixel_range": [
+        236,
+        6294
+      ]
+    },
+    "proxy": {
+      "frames": 39,
+      "pngs": 234,
+      "frame0_body_height_px": 192,
+      "feet_last_row_range": [
+        623,
+        623
+      ],
+      "minimum_geometry_margin_px": 99.867,
+      "ground_translation_range_px": [
+        -10.953831957119696,
+        1.8560544144709952
+      ],
+      "sword_visible_pixel_range": [
+        126,
+        6270
+      ]
+    }
+  },
+  "warnings": [
+    "Devin accepted the v01 starting pose without an initial transition. Check generated R000-R004 for melting and hands intersecting the belly.",
+    "Proxy is a modified humanoid, not an exact NiuLai model; appearance fidelity is untested.",
+    "R018-R038 continue the next action, not a new independent recovery.",
+    "R000-R038, 39 source-speed frames at 24fps, already on the H3 17k+5 grid; no padded/duplicated frames or retiming.",
+    "No AI generation, ComfyUI upgrade, model download or in-game validation performed."
+  ],
+  "provenance": {
+    "tools/export_control_heavy_combo.py": "0c9a8320dc971a0599938cf62420f4f201363466a31311e72e0ffaebfce8356c",
+    "tools/render_control_heavy_combo.py": "fcb3828fc2d8e3acd44301bbe493ccc02c665059d175cb1e1b51e85c4123855a",
+    "tools/prepare_control_heavy_inputs.py": "08749bb139402cd0b3bf756f0a023a7d236c9f597d09f4466042904278712d91",
+    "outputs/motion_reference_20261015/ual2_review.blend": "748d56d5dd095a3c290ccdfd1a115051114a2e7d15110240677d22a8d3048b0a"
+  },
+  "status": "technical_checks_passed",
+  "extension_validation": {
+    "v01_first_24_geometry_frames_identical_both_variants": true,
+    "v01_first_24_beauty_pngs_identical_both_variants": true,
+    "v01_original_files_preserved": 402,
+    "depth_note": "Global normalization is recomputed over all39 frames, so depth PNG bytes can differ."
+  }
+}

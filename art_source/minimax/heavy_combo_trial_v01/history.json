@@ -1,0 +1,809 @@
+{
+  "prompt": [
+    0,
+    "a6fcb781-897b-4421-be32-969fd416c344",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+          "strength_model": 1.0
+        }
+      },
+      "3": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+          "type": "minimax",
+          "device": "default"
+        }
+      },
+      "4": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+        }
+      },
+      "5": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+        }
+      },
+      "7": {
+        "class_type": "MiniMaxH3ImageToVideo",
+        "inputs": {
+          "clip": [
+            "3",
+            0
+          ],
+          "vae": [
+            "4",
+            0
+          ],
+          "prompt": "2D pixel art side-scrolling action game animation. The same small yellow calf warrior with brown shorts, brown boots, a short tail and a large solid gray greatsword as the supplied image. One continuous heavy sword combo facing screen right: briefly bend the knees and pull the sword back; step forward with the right foot and sweep the sword upward with a strong torso twist; continue the momentum into a broad powerful horizontal slash in front of the body; raise the sword and deliver a final heavy downward cleave, leaning the torso forward with bent knees, then recover to the original ready stance. The sword has a single rigid straight blade, its handle firmly held in the right hand; the other arm balances the body during the broad swings. Clear anticipation, fast decisive cuts, visible weight and follow-through. The calf remains in right-facing side profile, entirely inside the frame, with consistent body size. Locked orthographic side camera, constant framing, crisp pixel shapes and the original limited palette. A uniform solid pure green background fills the entire frame throughout. Only the calf and his solid sword animate.",
+          "width": 768,
+          "height": 768,
+          "length": 107,
+          "first_frame": [
+            "20",
+            0
+          ],
+          "last_frame": [
+            "21",
+            0
+          ]
+        }
+      },
+      "8": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 20261015
+        }
+      },
+      "9": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "res_multistep"
+        }
+      },
+      "10": {
+        "class_type": "BasicScheduler",
+        "inputs": {
+          "model": [
+            "2",
+            0
+          ],
+          "scheduler": "simple",
+          "steps": 8,
+          "denoise": 1.0
+        }
+      },
+      "11": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "2",
+            0
+          ],
+          "conditioning": [
+            "7",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "8",
+            0
+          ],
+          "guider": [
+            "11",
+            0
+          ],
+          "sampler": [
+            "9",
+            0
+          ],
+          "sigmas": [
+            "10",
+            0
+          ],
+          "latent_image": [
+            "7",
+            1
+          ]
+        }
+      },
+      "13": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "12",
+            0
+          ],
+          "vae": [
+            "4",
+            0
+          ]
+        }
+      },
+      "14": {
+        "class_type": "VAEDecodeAudio",
+        "inputs": {
+          "samples": [
+            "12",
+            0
+          ],
+          "vae": [
+            "5",
+            0
+          ]
+        }
+      },
+      "15": {
+        "class_type": "CreateVideo",
+        "inputs": {
+          "images": [
+            "13",
+            0
+          ],
+          "audio": [
+            "14",
+            0
+          ],
+          "fps": 24.0
+        }
+      },
+      "16": {
+        "class_type": "SaveVideo",
+        "inputs": {
+          "video": [
+            "15",
+            0
+          ],
+          "filename_prefix": "heavy_combo_trial_v01",
+          "format": "auto",
+          "codec": "auto"
+        }
+      },
+      "17": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "13",
+            0
+          ],
+          "filename_prefix": "heavy_combo_trial_v01_f"
+        }
+      },
+      "20": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "niulai_first.png"
+        }
+      },
+      "21": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "niulai_first.png"
+        }
+      }
+    },
+    {
+      "create_time": 1792074236528
+    },
+    [
+      "16",
+      "17"
+    ]
+  ],
+  "outputs": {
+    "17": {
+      "images": [
+        {
+          "filename": "heavy_combo_trial_v01_f_00001_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00002_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00003_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00004_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00005_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00006_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00007_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00008_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00009_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00010_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00011_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00012_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00013_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00014_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00015_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00016_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00017_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00018_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00019_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00020_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00021_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00022_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00023_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00024_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00025_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00026_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00027_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00028_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00029_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00030_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00031_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00032_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00033_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00034_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00035_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00036_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00037_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00038_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00039_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00040_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00041_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00042_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00043_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00044_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00045_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00046_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00047_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00048_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00049_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00050_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00051_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00052_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00053_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00054_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00055_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00056_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00057_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00058_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00059_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00060_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00061_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00062_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00063_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00064_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00065_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00066_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00067_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00068_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00069_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00070_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00071_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00072_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00073_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00074_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00075_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00076_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00077_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00078_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00079_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00080_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00081_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00082_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00083_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00084_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00085_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00086_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00087_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00088_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00089_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00090_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00091_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00092_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00093_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00094_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00095_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00096_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00097_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00098_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00099_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00100_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00101_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00102_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00103_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00104_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00105_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00106_.png",
+          "subfolder": "",
+          "type": "output"
+        },
+        {
+          "filename": "heavy_combo_trial_v01_f_00107_.png",
+          "subfolder": "",
+          "type": "output"
+        }
+      ]
+    },
+    "16": {
+      "images": [
+        {
+          "filename": "heavy_combo_trial_v01_00001_.mp4",
+          "subfolder": "",
+          "type": "output"
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "a6fcb781-897b-4421-be32-969fd416c344",
+          "timestamp": 1792074236529
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "a6fcb781-897b-4421-be32-969fd416c344",
+          "timestamp": 1792074236535
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "a6fcb781-897b-4421-be32-969fd416c344",
+          "timestamp": 1792074789313
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "17": {
+      "node_id": "17",
+      "display_node": "17",
+      "parent_node": null,
+      "real_node_id": "17"
+    },
+    "16": {
+      "node_id": "16",
+      "display_node": "16",
+      "parent_node": null,
+      "real_node_id": "16"
+    }
+  }
+}

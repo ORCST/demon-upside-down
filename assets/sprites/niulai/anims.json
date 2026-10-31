@@ -1,0 +1,28 @@
+{
+ "idle": {
+  "file": "idle.png",
+  "frames": 36,
+  "cols": 8,
+  "w": 103,
+  "h": 86,
+  "x": 76,
+  "y": 122,
+  "fps": 12.0,
+  "loop": true,
+  "hold": null,
+  "scale": 3.0
+ },
+ "run": {
+  "file": "run.png",
+  "frames": 15,
+  "cols": 8,
+  "w": 123,
+  "h": 63,
+  "x": 22,
+  "y": 145,
+  "fps": 12.0,
+  "loop": true,
+  "hold": null,
+  "scale": 3.0
+ }
+}

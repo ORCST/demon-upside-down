@@ -1,0 +1,87 @@
+{
+  "status": "first_round_completed_no_game_import",
+  "best_body_preservation_in_this_trial": "depth_proxy",
+  "all_generated_trials_require_art_revision": true,
+  "trials": [
+    {
+      "directory": "depth_original_attempt02",
+      "label": "成人比例 depth",
+      "prompt_id": "c297fe78-95ed-4e62-8c6a-8b62254e7dd5",
+      "frames": 39,
+      "fps": 24,
+      "execution_seconds": 92.88,
+      "manual_verdict": "rejected_for_game_import",
+      "native_opaque_px_range": [
+        1081,
+        5314
+      ],
+      "source_hashes": {
+        "art_source/control/heavy_combo_v02_39f/original/depth.mp4": "e7e02436185cfd20bb3829cfea633944a9086538f4fd123bb4a6ff94ac4f27d5",
+        "art_source/control/heavy_combo_v02_39f/render_manifest.json": "dc4fefcb85d3b0d1f019d93b0e6488175ec2f00c403b55349b7ccf006acafdf2",
+        "art_source/control/heavy_combo_v02_39f/inputs/R000_idle_tail_green.png": "84e7834431633baaddb080ad25ddd89b94299abab79592b1316c04e70914c5f4",
+        "art_source/control/heavy_combo_v02_39f/inputs/R008_hc1_k4_green.png": "1c8757abc0461fa08f0a45e9202912f3accbf85b8c7b9731fc8eb2f9d3260958",
+        "art_source/control/heavy_combo_v02_39f/inputs/R012_hc1_k6_green.png": "83e08e98de30a5fdf6377b72034cb5b4604841f338e734747cced35ec124780f",
+        "tools/run_h3_control_heavy.py": "4f86abf40826f6e87421091ba3afa23b3e28aa7c30c85fcc8bac8939534ff111"
+      },
+      "generated_video_sha256": "c4e5b5f9832a29109ba3971368994cb30914b9451f87d506c3ecdacd305efb0b"
+    },
+    {
+      "directory": "depth_proxy",
+      "label": "比例代理 depth",
+      "prompt_id": "6f2125e3-ca61-4be7-a3c0-41dadcacca53",
+      "frames": 39,
+      "fps": 24,
+      "execution_seconds": 72.776,
+      "manual_verdict": "improved_body_but_rejected_for_game_import",
+      "native_opaque_px_range": [
+        1524,
+        4083
+      ],
+      "source_hashes": {
+        "art_source/control/heavy_combo_v02_39f/proxy/depth.mp4": "35eb145dea061108c114d24a33a58257f8e80f5d3b7b9072ed505f2e7a559f18",
+        "art_source/control/heavy_combo_v02_39f/render_manifest.json": "dc4fefcb85d3b0d1f019d93b0e6488175ec2f00c403b55349b7ccf006acafdf2",
+        "art_source/control/heavy_combo_v02_39f/inputs/R000_idle_tail_green.png": "84e7834431633baaddb080ad25ddd89b94299abab79592b1316c04e70914c5f4",
+        "art_source/control/heavy_combo_v02_39f/inputs/R008_hc1_k4_green.png": "1c8757abc0461fa08f0a45e9202912f3accbf85b8c7b9731fc8eb2f9d3260958",
+        "art_source/control/heavy_combo_v02_39f/inputs/R012_hc1_k6_green.png": "83e08e98de30a5fdf6377b72034cb5b4604841f338e734747cced35ec124780f",
+        "tools/run_h3_control_heavy.py": "4f86abf40826f6e87421091ba3afa23b3e28aa7c30c85fcc8bac8939534ff111"
+      },
+      "generated_video_sha256": "8749992b14ce058a249176e17550d3b519b481ec0fdea1fac6ccf657d2314d79"
+    },
+    {
+      "directory": "lineart_proxy",
+      "label": "比例代理 Canny",
+      "prompt_id": "47fb6743-d566-4179-85f4-192f94322915",
+      "frames": 39,
+      "fps": 24,
+      "execution_seconds": 70.892,
+      "manual_verdict": "rejected_for_game_import",
+      "native_opaque_px_range": [
+        1435,
+        2711
+      ],
+      "source_hashes": {
+        "art_source/control/heavy_combo_v02_39f/proxy/lineart.mp4": "d903b02f35995a713725504a7f31749e7a3b58895ba608cc12eb6357f21e225b",
+        "art_source/control/heavy_combo_v02_39f/render_manifest.json": "dc4fefcb85d3b0d1f019d93b0e6488175ec2f00c403b55349b7ccf006acafdf2",
+        "art_source/control/heavy_combo_v02_39f/inputs/R000_idle_tail_green.png": "84e7834431633baaddb080ad25ddd89b94299abab79592b1316c04e70914c5f4",
+        "art_source/control/heavy_combo_v02_39f/inputs/R008_hc1_k4_green.png": "1c8757abc0461fa08f0a45e9202912f3accbf85b8c7b9731fc8eb2f9d3260958",
+        "art_source/control/heavy_combo_v02_39f/inputs/R012_hc1_k6_green.png": "83e08e98de30a5fdf6377b72034cb5b4604841f338e734747cced35ec124780f",
+        "tools/run_h3_control_heavy.py": "2867d9db59d904d7ed15169381a0f1d4be249aaf49b4f760a03c85b97bdea675"
+      },
+      "generated_video_sha256": "955bebe996d18b1567132685eafa846ad861ed853d8ea62b22db59202da24dc9"
+    }
+  ],
+  "failed_attempt": "depth_original (native compiler abort, no frames)",
+  "comparison_fixed_crop": [
+    34,
+    276,
+    698,
+    768
+  ],
+  "comparison_video_fps": 24,
+  "slower_review_copy_fps": 12,
+  "notes": [
+    "Single seed per condition: this is a feasibility comparison, not a general benchmark.",
+    "Each reference_vs_generated video uses its matching mannequin proportion; the first panel of this combined overview is the proxy reference.",
+    "Pixel cleanup is diagnostic and cannot turn missing or smeared sword shapes into usable art."
+  ]
+}

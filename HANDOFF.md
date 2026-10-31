@@ -1,6 +1,10 @@
 # 牛来游戏交接入口
 
-最后同步：2026-10-31，Codex。开工先读 [沟通板](docs/协作/沟通板.md) 发给自己的待处理消息、[AGENTS.md](AGENTS.md)、本文和 [CLAUDE.md](CLAUDE.md)。每次完成后同步沟通板、[完成索引](docs/已完成/README.md) 和 HANDOFF。
+最后同步：2026-10-31，Claude。开工先读 [沟通板](docs/协作/沟通板.md) 发给自己的待处理消息、[AGENTS.md](AGENTS.md)、本文和 [CLAUDE.md](CLAUDE.md)。每次完成后同步沟通板、[完成索引](docs/已完成/README.md) 和 HANDOFF。
+
+## 城堡 C 已在游戏中；镜头上限已修（2026-10-31，Claude）
+
+**当前游戏场景是城堡 C**（Devin 接入）：`assets/environment/castle_c/` 16 张图与 Codex 整理包一致，`castle_background.gd` 五层视差，`block.gd` 地面/木板贴图；旧 3D 城堡素材仍在仓库但未被引用。Camera `limit_top` 从 −200 改为 −84（= floor_y 300 − 墙高 384），二段跳到 Plat2/Plat5 上方不再露出墙顶；自动演示无错误，定向检查镜头顶边始终 ≥ −84。改墙高/地面高度时要同步此值。待用户实机试玩。见 [记录](docs/已完成/2026-10-31_城堡C场景接入与镜头上限修复.md)。下文 10-29 及更早“仍用 3D 城堡/场景未替换”均为历史。
 
 ## 当前仓库访问（2026-10-31 最新决定）
 
@@ -43,7 +47,7 @@ Devin可按manifest/README接手场景制作，核对视差、碰撞和实际滚
 
 ## 游戏当前状态（他方记录，本轮未重跑）
 
-- **城堡内部 v01 已进游戏**，用户此前选定“城堡内部、先做场景”。KayKit 3D 模块 → 平涂渲染 →32色像素，后墙/石柱视差、火把光晕、石砖地面和木板平台。工具 `tools/scene3d_render.py` / `scene3d_pixelize.py`，素材 `assets/environment/castle/`。见 [10-27 城堡记录](docs/已完成/2026-10-27_城堡内部场景v01.md)。已知砖缝错位、镜头升高可能露天空，详见原记录。
+- **（历史，已被城堡 C 替代）城堡内部 v01**，用户此前选定“城堡内部、先做场景”。KayKit 3D 模块 → 平涂渲染 →32色像素，后墙/石柱视差、火把光晕、石砖地面和木板平台。工具 `tools/scene3d_render.py` / `scene3d_pixelize.py`，素材 `assets/environment/castle/`。见 [10-27 城堡记录](docs/已完成/2026-10-27_城堡内部场景v01.md)。其“镜头升高露天空”已于 10-31 修复，详见原记录。
 - **主角动画已全部统一 3D**，当前资源 `assets/sprites/niulai3d/niulai3d.tres`，由 `tools/niulai3d_pack.py` 打包。地面 J J J 为 hc1/hc2/hc3；移动 idle/run/jump/fall/land/dash/hurt/death 已换3D，10-27 其他攻击也用3D帧，并修上挑起手倒地。见 [10-18 三刀接入](docs/已完成/2026-10-18_HeavyCombo三刀接入游戏v01.md)、[10-20 移动接入](docs/已完成/2026-10-20_移动动作3D渲染接入v01.md)、[10-27 复查](docs/已完成/2026-10-27_接手复查与攻击姿势统一.md)。翻滚有渲染但未接入，未决定增加。
 - **高刷新率移动发糊已由 Devin 修复，等用户实测**：物理插值、相机按物理帧跟随，见 [记录](docs/已完成/2026-10-27_高刷新率移动发糊修复.md)。玩法手感仍等用户实机试。
 

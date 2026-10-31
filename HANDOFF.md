@@ -4,7 +4,7 @@
 
 ## GitHub 同步（2026-10-31）
 
-用户明确要求将截图中的 Devin 项目同步到 GitHub。已确认本机项目与 `block.gd` 对应，账户 ORCST，目标为私有仓库 [https://github.com/ORCST/demon-upside-down](https://github.com/ORCST/demon-upside-down)。当前同步准备中，核验结果见 [本次记录](docs/已完成/2026-10-31_GitHub项目同步.md)。现有游戏代码、美术源文件和工具纳入快照；未修改玩法或生产素材。
+用户明确要求将截图中的 Devin 项目同步到 GitHub。已确认本机项目与 `block.gd` 对应，账户 ORCST，目标为私有仓库 [https://github.com/ORCST/demon-upside-down](https://github.com/ORCST/demon-upside-down)。首次完整源码快照已推送并核验远端 main；后续可直接使用 origin，验证结果见 [本次记录](docs/已完成/2026-10-31_GitHub项目同步.md)。现有游戏代码、美术源文件和工具纳入快照；未修改玩法或生产素材。
 
 **源码现状补充：** 当前 `block.gd` 与 `castle_background.gd` 已引用 `assets/environment/castle_c/`；以下 10-29 的“仍用原有3D城堡 / 场景尚未替换”属于当时交接记录，不能覆盖当前源码事实。森林素材的后续制作状态本次未重新验收。
 

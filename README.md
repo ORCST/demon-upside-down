@@ -1,5 +1,7 @@
 # Demon Upside Down · 牛来
 
+仓库已于 2026-10-31 按用户授权公开：[https://github.com/ORCST/demon-upside-down](https://github.com/ORCST/demon-upside-down)。可直接读取源码和交接资料；向本仓库提交变更仍需 GitHub 写权限。
+
 使用 **Godot 4.6.2 标准版 / GDScript** 制作的像素风横版动作游戏原型，内部画面为 640×360。
 
 当前源码包含牛来主角的 3D 渲染像素动画、Heavy Combo 三连击、其他攻击和移动动作，以及城堡 C 风格背景、地面和平台。此仓库保存本机现有开发成果和素材，不代表游戏已完成。

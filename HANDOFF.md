@@ -2,9 +2,13 @@
 
 最后同步：2026-10-31，Codex。开工先读 [沟通板](docs/协作/沟通板.md) 发给自己的待处理消息、[AGENTS.md](AGENTS.md)、本文和 [CLAUDE.md](CLAUDE.md)。每次完成后同步沟通板、[完成索引](docs/已完成/README.md) 和 HANDOFF。
 
+## 当前仓库访问（2026-10-31 最新决定）
+
+用户已明确授权将仓库改为**公开**。已完成修改，并验证未登录读取仓库 API 和 README 成功。地址：[https://github.com/ORCST/demon-upside-down](https://github.com/ORCST/demon-upside-down)，分支 `main`。Claude 可通过可用的网页/连接器读取；直接推送仍需写权限。详见 [公开与读取记录](docs/已完成/2026-10-31_仓库公开与Claude读取.md)。下方的“首次按私有同步”仅为历史过程，不再代表当前可见性。
+
 ## GitHub 同步（2026-10-31）
 
-用户明确要求将截图中的 Devin 项目同步到 GitHub。已确认本机项目与 `block.gd` 对应，账户 ORCST，目标为私有仓库 [https://github.com/ORCST/demon-upside-down](https://github.com/ORCST/demon-upside-down)。首次完整源码快照已推送并核验远端 main；后续可直接使用 origin，验证结果见 [本次记录](docs/已完成/2026-10-31_GitHub项目同步.md)。现有游戏代码、美术源文件和工具纳入快照；未修改玩法或生产素材。
+用户明确要求将截图中的 Devin 项目同步到 GitHub。已确认本机项目与 `block.gd` 对应，账户 ORCST，首次同步时目标为私有仓库（同日已按用户授权改为公开） [https://github.com/ORCST/demon-upside-down](https://github.com/ORCST/demon-upside-down)。首次完整源码快照已推送并核验远端 main；后续可直接使用 origin，验证结果见 [本次记录](docs/已完成/2026-10-31_GitHub项目同步.md)。现有游戏代码、美术源文件和工具纳入快照；未修改玩法或生产素材。
 
 **源码现状补充：** 当前 `block.gd` 与 `castle_background.gd` 已引用 `assets/environment/castle_c/`；以下 10-29 的“仍用原有3D城堡 / 场景尚未替换”属于当时交接记录，不能覆盖当前源码事实。森林素材的后续制作状态本次未重新验收。
 
